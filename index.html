@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thanal.com</title>
+
+   
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="kerala-map-container">
+       Kerala Map Here
+   </div>
+    <div class="logo-container">
+    <IMG src="data/ChatGPT Image Jun 2, 2026, 07_29_06 PM.png" alt="Thanal.com" class="logo"></IMG>
+        <input type="text" placeholder="Search destinations..." class="search-box">
+</div>
+    
+    <div class="district-container">
+
+    <div class="district-card" onclick="openDistrict('Kasaragod')">
+    <div class="district-image">
+        <img src="images/kasargod.png" alt="Kasargod">
+        <div class="district-name">
+            <h3>Kasargod</h3>
+        </div>
+        <div class="explore-btn">
+            Explore →
+        </div>
+    </div>
+    </div>
+
+    <div class="district-card" onclick="openDistrict('Kannur')">
+        <div class="district-image">
+            <img src="images/kannur.png" alt="kannur">
+            <div class="district-name">
+                <h3>Kannur</h3>
+            </div>
+            <div class="explore-btn">
+            Explore →
+        </div>
+        </div>
+    </div>
+
+    <div class="district-card" onclick="openDistrict('Wayanad') ">
+        <div class="district-image">
+            <img src="images/wayanad.png" alt="Wayanad">
+            <div class="district-name">
+                <h3>Wayanad</h3>
+            </div>
+            <div class="explore-btn">
+            Explore →
+        </div>
+        </div>
+    </div>
+    <div class="district-card" onclick="openDistrict('Kozhikode')">
+        <div class="district-image">
+            <img src="images/kozhikode.png" alt="Kozhikode">
+            <div class="district-name">
+                <h3>Kozhikode</h3>
+            </div>
+            <div class="explore-btn">
+            Explore →
+        </div>
+        </div>
+    </div>
+    <div class="district-card" onclick="openDistrict('Malapuram')   ">
+        <div class="district-image">
+            <img src="images/malapuram.png" alt="Malapuram">
+            <div class="district-name">
+                <h3>Malapuram</h3>
+            </div>
+            <div class="explore-btn">
+            Explore →
+        </div>  
+        </div>
+    </div>
+    <div class="district-card" onclick="openDistrict('Palakkad')">
+        <div class="district-image">
+            <img src="images/palakkad.png" alt="Palakkad">
+            <div class="district-name">
+                <h3>Palakkad</h3>
+            </div>
+            <div class="explore-btn">
+            Explore →
+        </div>
+        </div>
+    </div>
+    <div class="district-card" onclick="openDistrict('Thrissur')    ">
+        <div class="district-image">
+            <img src="images/Thrissur.png" alt="Thrissur">
+            <div class="district-name">
+                <h3>Thrissur</h3>
+            </div>
+            <div class="explore-btn">
+            Explore →
+        </div>  
+        </div>
+    </div>
+    <div class="district-card" onclick="openDistrict('Ernakulam')">
+        <div class="district-image">
+            <img src="images/Ernakulam.png" alt="Ernakulam">
+            <div class="district-name">
+                <h3>Ernakulam</h3>
+            </div>
+            <div class="explore-btn">
+            Explore →
+        </div>
+        </div>
+    </div>
+    <div class="district-card" onclick="openDistrict('Idukki')  ">
+        <div class="district-image">
+            <img src="images/Idukki.png" alt="Idukki">
+            <div class="district-name">
+                <h3>Idukki</h3>
+            </div>
+            <div class="explore-btn">
+            Explore →
+        </div>  
+        </div>
+    </div>
+    <div class="district-card" onclick="openDistrict('Kottayam')">
+        <div class="district-image">
+            <img src="images/Kottayam.png" alt="Kottayam">
+            <div class="district-name">
+                <h3>Kottayam</h3>
+            </div>
+            <div class="explore-btn">
+            Explore →
+        </div>
+        </div>
+    </div>
+    <div class="district-card" onclick="openDistrict('Alappuzha')   ">
+        <div class="district-image">
+            <img src="images/Alappuzha.png" alt="Alappuzha">
+            <div class="district-name">
+                <h3>Alappuzha</h3>
+            </div>
+            <div class="explore-btn">
+            Explore →
+        </div>  
+        </div>
+    </div>
+    <div class="district-card" onclick="openDistrict('Pathanamthitta')">
+        <div class="district-image">
+            <img src="images/Pathanamthitta.png" alt="Pathanamthitta">
+            <div class="district-name">
+                <h3>Pathanamthitta</h3>
+            </div>
+            <div class="explore-btn">
+            Explore →
+        </div>
+        </div>
+    </div>
+    <div class="district-card" onclick="openDistrict('Kollam')  ">
+        <div class="district-image">
+            <img src="images/Kollam.png" alt="Kollam">
+            <div class="district-name">
+                <h3>Kollam</h3>
+            </div>
+            <div class="explore-btn">
+            Explore →
+        </div>  
+        </div>
+    </div>
+    <div class="district-card" onclick="openDistrict('Thiruvananthapuram')">
+        <div class="district-image">
+            <img src="images/Thiruvananthapuram.png" alt="Thiruvananthapuram">
+            <div class="district-name">
+                <h3>Thiruvananthapuram</h3>
+            </div>
+            <div class="explore-btn">
+            Explore →
+        </div>
+        </div>
+    </div>
+    
+
+</div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
