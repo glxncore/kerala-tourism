@@ -1,0 +1,88 @@
+/* ==========================================================================
+   THΛNAL (തണൽ) — DESIGN TOKENS & SYSTEM VARIABLES
+   Luxury Editorial + Kerala Nature + Modern Digital Magazine
+   ========================================================================== */
+
+:root {
+  /* --- Primary Brand Colors (Kerala Deep Forest & Canopy) --- */
+  --forest: #173B32;
+  --deep-forest: #0D2923;
+  --forest-light: #224E43;
+  --forest-dark: #071915;
+
+  /* --- Backgrounds & Surface Tones (Ivory, Warm Paper) --- */
+  --ivory: #F5F1E8;
+  --warm-white: #FAF9F5;
+  --pure-white: #FFFFFF;
+  --surface-card: #FFFFFF;
+  --surface-muted: #EFE9DD;
+  --surface-overlay: rgba(13, 41, 35, 0.72);
+
+  /* --- Nature (Flora & Spice Hills) --- */
+  --moss: #6F8065;
+  --moss-light: #8E9F84;
+  --sage: #8A9270;
+  --sage-light: #B2B8A0;
+
+  /* --- Water (Arabian Sea, Backwaters & Mist) --- */
+  --backwater: #6F9A9A;
+  --backwater-dark: #4F7979;
+  --mist-blue: #A9C4C2;
+  --mist-blue-light: #D4E4E3;
+
+  /* --- Warm Accents (Sand, Laterite, Terracotta) --- */
+  --sand: #C9A875;
+  --sand-light: #E3CEAB;
+  --terracotta: #A66A4C;
+  --terracotta-light: #C78A6C;
+
+  /* --- Typography Colors --- */
+  --text-primary: #122822;
+  --text-secondary: #4A5B53;
+  --text-muted: #788A81;
+  --text-inverse: #FAF9F5;
+  --text-inverse-muted: #D3DDD8;
+
+  /* --- Borders & Outlines (Subtle borders over heavy shadows) --- */
+  --border-subtle: rgba(23, 59, 50, 0.08);
+  --border-medium: rgba(23, 59, 50, 0.16);
+  --border-strong: rgba(23, 59, 50, 0.28);
+  --border-inverse: rgba(250, 249, 245, 0.18);
+
+  /* --- Shadows (Restrained, soft luxury elevation) --- */
+  --shadow-sm: 0 2px 8px rgba(13, 41, 35, 0.04);
+  --shadow-md: 0 8px 24px rgba(13, 41, 35, 0.07);
+  --shadow-lg: 0 16px 40px rgba(13, 41, 35, 0.10);
+  --shadow-hover: 0 20px 48px rgba(13, 41, 35, 0.14);
+
+  /* --- Border Radius System --- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-card: 22px;
+  --radius-image: 24px;
+  --radius-pill: 999px;
+
+  /* --- Typography System (Max 3 Font Families) --- */
+  --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-ml: 'Noto Sans Malayalam', 'Manrope', sans-serif;
+
+  /* --- Layout & Spacing Scale --- */
+  --container-max-width: 1320px;
+  --container-padding: clamp(1.25rem, 3.5vw, 3rem);
+  
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6rem;
+
+  /* --- Motion & Transitions --- */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}

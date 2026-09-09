@@ -1,0 +1,565 @@
+[
+  {
+    "id": "kasaragod",
+    "name": "Kasaragod",
+    "nameMl": "കാസർഗോഡ്",
+    "tagline": "The Northern Citadel of Seven Tongues",
+    "description": "Perched at Kerala's northern frontier, Kasaragod is a tranquil tapestry of majestic coastal forts, winding backwaters, coir-making hamlets, and rich multi-lingual heritage.",
+    "image": "assets/images/districts/kasaragod.png",
+    "region": "North Kerala (Malabar)",
+    "bestSeason": "October to March",
+    "idealDays": "2 - 3 Days",
+    "altitude": "19 m above sea level",
+    "climate": "Tropical coastal, cooling sea breezes",
+    "moods": [
+      "Coast",
+      "Culture",
+      "Escape",
+      "Slow travel"
+    ],
+    "topDestinations": [
+      "Bekal Fort",
+      "Chandragiri Fort",
+      "Ranipuram Hills",
+      "Valiyaparamba Backwaters",
+      "Ananthapura Lake Temple"
+    ],
+    "keyExperiences": [
+      "Sunset walk on Bekal ramparts",
+      "Cruising untouched Valiyaparamba backwaters",
+      "Trekking the misty shola grasslands of Ranipuram",
+      "Witnessing rare Theyyam rituals in sacred groves"
+    ],
+    "foodSpecialties": [
+      "Malabar Biryani",
+      "Pathiri with fish curry",
+      "Kallummakkaya (mussels)",
+      "Elaneer pudding"
+    ],
+    "howToReach": "Nearest Airport: Mangaluru International Airport (50 km). Major Railway Station: Kasaragod (KGQ).",
+    "pageUrl": "pages/districts/kasaragod.html"
+  },
+  {
+    "id": "kannur",
+    "name": "Kannur",
+    "nameMl": "കണ്ണൂർ",
+    "tagline": "The Realm of Looms, Lore & Living Gods",
+    "description": "Kannur pulses with ancient energy: from the mesmerizing sacred dance of Theyyam to Asia's longest drive-in beach at Muzhappilangad, colonial sea forts, and handloom traditions.",
+    "image": "assets/images/districts/kannur.png",
+    "region": "North Kerala (Malabar)",
+    "bestSeason": "November to February",
+    "idealDays": "2 - 3 Days",
+    "altitude": "15 m above sea level",
+    "climate": "Maritime tropical",
+    "moods": [
+      "Culture",
+      "Coast",
+      "Adventure",
+      "Photography"
+    ],
+    "topDestinations": [
+      "Muzhappilangad Drive-in Beach",
+      "St. Angelo Fort",
+      "Dharmadam Island",
+      "Arakkal Museum",
+      "Paithalmala Peak"
+    ],
+    "keyExperiences": [
+      "Witnessing night-long Theyyam ceremonies in kavus",
+      "Driving along Muzhappilangad beach sands",
+      "Exploring the bastions of 1505 St. Angelo Fort",
+      "Hiking up to Paithalmala ridge"
+    ],
+    "foodSpecialties": [
+      "Thalassery Biryani",
+      "Arikadukka (stuffed mussels)",
+      "Unnakaya",
+      "Mutta Mala"
+    ],
+    "howToReach": "Nearest Airport: Kannur International Airport (CNN). Major Railway Station: Kannur (CAN).",
+    "pageUrl": "pages/districts/kannur.html"
+  },
+  {
+    "id": "wayanad",
+    "name": "Wayanad",
+    "nameMl": "വയനാട്",
+    "tagline": "Misty Highlands & Prehistoric Echoes",
+    "description": "High on the Western Ghats plateau, Wayanad is an emerald paradise of cardamom plantations, bamboo forests, Neolithic cave petroglyphs, and untamed elephant corridors.",
+    "image": "assets/images/districts/wayanad.png",
+    "region": "North Kerala (Western Ghats)",
+    "bestSeason": "September to May (Monsoon: Jun-Aug for mist)",
+    "idealDays": "3 - 4 Days",
+    "altitude": "700 - 2,100 m above sea level",
+    "climate": "Cool mountain climate, frequent hill mists",
+    "moods": [
+      "Mountains",
+      "Wildlife",
+      "Adventure",
+      "Monsoon",
+      "Escape"
+    ],
+    "topDestinations": [
+      "Chembra Peak & Heart Lake",
+      "Edakkal Caves",
+      "Banasura Sagar Dam",
+      "Kuruva Island",
+      "Muthanga Wildlife Sanctuary"
+    ],
+    "keyExperiences": [
+      "Climbing through history at the prehistoric Edakkal rock engravings",
+      "Trek to Chembra heart-shaped lake",
+      "Bamboo rafting along the Kabini river at Kuruva Dweep",
+      "Jeep safari through misty forest corridors"
+    ],
+    "foodSpecialties": [
+      "Gandhakasala aromatic rice dishes",
+      "Bamboo shoot curry",
+      "Wild honey",
+      "Wayanad coffee & pepper chicken"
+    ],
+    "howToReach": "Nearest Airport: Calicut International Airport (95 km). Nearest Railway: Kozhikode (85 km). Scenic ghat road via Thamarassery Churam.",
+    "pageUrl": "pages/districts/wayanad.html"
+  },
+  {
+    "id": "kozhikode",
+    "name": "Kozhikode",
+    "nameMl": "കോഴിക്കോട്",
+    "tagline": "The Capital of Spices & Malabar Soul",
+    "description": "The historic port where spice trade with Arabs, Chinese, and Europeans forged legendary culinary artistry, literary intellect, warm hospitality, and historic shoreline piers.",
+    "image": "assets/images/districts/kozhikode.png",
+    "region": "North Kerala (Malabar)",
+    "bestSeason": "October to March",
+    "idealDays": "2 - 3 Days",
+    "altitude": "1 m above sea level",
+    "climate": "Warm coastal tropical",
+    "moods": [
+      "Food",
+      "Culture",
+      "Coast",
+      "Slow travel"
+    ],
+    "topDestinations": [
+      "Kozhikode Beach & Historic Pier",
+      "SM Street (Sweet Meat Street)",
+      "Kappad Beach",
+      "Beypore Dhow Shipbuilding Yard",
+      "Thusharagiri Waterfalls"
+    ],
+    "keyExperiences": [
+      "Sampling authentic Kozhikodan Halwa and Dum Biryani",
+      "Watching ancient wooden Uru ships crafted by hand in Beypore",
+      "Evening stroll past colonial iron pier ruins at Kozhikode beach",
+      "Trekking around the roaring cascades of Thusharagiri"
+    ],
+    "foodSpecialties": [
+      "Kozhikodan Biryani",
+      "Calicut Halwa",
+      "Sulaimani black tea",
+      "Chatti Pathiri",
+      "Banana chips fried in coconut oil"
+    ],
+    "howToReach": "Calicut International Airport (CCJ) located 28 km away. Major Railway: Kozhikode (CLT).",
+    "pageUrl": "pages/districts/kozhikode.html"
+  },
+  {
+    "id": "malappuram",
+    "name": "Malappuram",
+    "nameMl": "മലപ്പുറം",
+    "tagline": "Hill Terraces, Royal Teak & Cultural Renaissance",
+    "description": "Framed by the Arabian Sea and Nilgiri foothills, Malappuram is renowned for the world's oldest teak plantation at Nilambur, sacred pilgrimage centres, and football passion.",
+    "image": "assets/images/districts/malappuram.png",
+    "region": "North-Central Kerala",
+    "bestSeason": "September to March",
+    "idealDays": "2 Days",
+    "altitude": "40 m above sea level",
+    "climate": "Tropical monsoon",
+    "moods": [
+      "Culture",
+      "Nature",
+      "Escape"
+    ],
+    "topDestinations": [
+      "Nilambur Teak Museum & Conolly's Plot",
+      "Kottakkal Arya Vaidya Sala",
+      "Nedumkayam Rainforest",
+      "Padinharekara Beach",
+      "Thirunavaya Navamukunda Temple"
+    ],
+    "keyExperiences": [
+      "Walking through the world's oldest man-made teak plantation",
+      "Traditional Ayurveda treatments at legendary Kottakkal",
+      "Watching local Sevens football tournaments",
+      "Birdwatching at the Bharathapuzha river estuary"
+    ],
+    "foodSpecialties": [
+      "Thari Kanjhi",
+      "Erachi Puttu",
+      "Ada Pradhaman",
+      "Malabar Mutton Curry"
+    ],
+    "howToReach": "Calicut International Airport (CCJ) is within 25 km. Major Railway: Tirur (TIR) and Angadippuram.",
+    "pageUrl": "pages/districts/malappuram.html"
+  },
+  {
+    "id": "palakkad",
+    "name": "Palakkad",
+    "nameMl": "പാലക്കാട്",
+    "tagline": "The Mountain Pass & Verdant Rice Fields",
+    "description": "Guarding Kerala's primary mountain corridor through the Western Ghats, Palakkad is the state's rice bowl, replete with windswept palmyra trees, granite forts, and untouched rainforests.",
+    "image": "assets/images/districts/palakkad.png",
+    "region": "Central Kerala",
+    "bestSeason": "November to February",
+    "idealDays": "2 - 3 Days",
+    "altitude": "84 m above sea level",
+    "climate": "Dry tropical, breezy gap winds",
+    "moods": [
+      "Nature",
+      "Escape",
+      "Mountains",
+      "Slow travel"
+    ],
+    "topDestinations": [
+      "Palakkad Fort (Tipu's Fort)",
+      "Silent Valley National Park",
+      "Malampuzha Dam & Gardens",
+      "Nelliyampathy Hill Station",
+      "Kalpathy Heritage Village"
+    ],
+    "keyExperiences": [
+      "Experiencing the primeval quiet of Silent Valley evergreen rainforest",
+      "Exploring the 18th-century granite ramparts of Palakkad Fort",
+      "Driving winding hairpin bends into Nelliyampathy orange orchards",
+      "Attending the historic Kalpathy Ratholsavam chariot festival"
+    ],
+    "foodSpecialties": [
+      "Palakkadan Matta Rice",
+      "Ramaswamy Idli",
+      "Jackfruit Elayappam",
+      "Avial & Olan"
+    ],
+    "howToReach": "Nearest Airport: Coimbatore International (CJB, 55 km). Major Railway: Palakkad Junction (PGT).",
+    "pageUrl": "pages/districts/palakkad.html"
+  },
+  {
+    "id": "thrissur",
+    "name": "Thrissur",
+    "nameMl": "തൃശ്ശൂർ",
+    "tagline": "The Cultural Crucible of Kerala",
+    "description": "Built spirally around a hillock crowned by the ancient Vadakkumnathan temple, Thrissur is Kerala's cultural beating heart, celebrated globally for the spectacle of Thrissur Pooram.",
+    "image": "assets/images/districts/thrissur.png",
+    "region": "Central Kerala",
+    "bestSeason": "October to April (Pooram: April/May)",
+    "idealDays": "2 - 3 Days",
+    "altitude": "3 m above sea level",
+    "climate": "Tropical maritime",
+    "moods": [
+      "Culture",
+      "Family",
+      "Photography"
+    ],
+    "topDestinations": [
+      "Vadakkumnathan Temple",
+      "Athirappilly & Vazhachal Waterfalls",
+      "Kerala Kalamandalam",
+      "Punnathur Kotta",
+      "Chavakkad Beach"
+    ],
+    "keyExperiences": [
+      "Standing before the Niagara of India at Athirappilly Falls",
+      "Experiencing masterclasses in Kathakali & Mohiniyattam at Kalamandalam",
+      "Witnessing the thunderous Ilanjithara Melam percussion symphony",
+      "Sunset over the estuary at Chavakkad"
+    ],
+    "foodSpecialties": [
+      "Thrissur Vellayappam",
+      "Meen Peera",
+      "Roast Duck Curry",
+      "Ela Ada"
+    ],
+    "howToReach": "Nearest Airport: Cochin International Airport (COK, 53 km). Major Railway: Thrissur (TCR).",
+    "pageUrl": "pages/districts/thrissur.html"
+  },
+  {
+    "id": "ernakulam",
+    "name": "Ernakulam",
+    "nameMl": "എറണാകുളം",
+    "tagline": "The Commercial Hub & Colonial Harbor of Kochi",
+    "description": "Where modern cosmopolitan flair meets spice warehouses, Chinese fishing nets, 500-year-old Portuguese synagogues, cutting-edge art biennales, and vibrant island ferries.",
+    "image": "assets/images/districts/ernakulam.png",
+    "region": "Central Kerala",
+    "bestSeason": "October to March",
+    "idealDays": "3 - 4 Days",
+    "altitude": "4 m above sea level",
+    "climate": "Coastal tropical",
+    "moods": [
+      "Coast",
+      "Culture",
+      "Food",
+      "Photography",
+      "Family"
+    ],
+    "topDestinations": [
+      "Fort Kochi & Chinese Fishing Nets",
+      "Mattancherry Palace & Jew Town",
+      "Marine Drive & Kochi Harbor",
+      "Kadamakudy Islands",
+      "Hill Palace Museum Tripunithura"
+    ],
+    "keyExperiences": [
+      "Bicycle tour through colonial lanes of Fort Kochi",
+      "Sunset ferry ride past cantilevered Chinese fishing nets",
+      "Kayaking through the serene prawn farms of Kadamakudy",
+      "Discovering contemporary art galleries in heritage godowns"
+    ],
+    "foodSpecialties": [
+      "Cochin Seafood Platter",
+      "Appam with mutton stew",
+      "Fish Molly",
+      "Kayees Rahmathulla Biryani"
+    ],
+    "howToReach": "Cochin International Airport (COK) inside the district. Major Railway: Ernakulam Junction (ERS) & Town (ERN).",
+    "pageUrl": "pages/districts/ernakulam.html"
+  },
+  {
+    "id": "idukki",
+    "name": "Idukki",
+    "nameMl": "ഇടുക്കി",
+    "tagline": "The Highland Kingdom of Mist & Spices",
+    "description": "Dominated by towering peaks of the Western Ghats, sprawling tea gardens, wildlife sanctuaries, and Asia's first arch dam, Idukki is a breath of crisp mountain air.",
+    "image": "assets/images/districts/idukki.png",
+    "region": "Central-Highland Kerala",
+    "bestSeason": "September to May",
+    "idealDays": "3 - 5 Days",
+    "altitude": "1,200 - 2,695 m (Anamudi)",
+    "climate": "Sub-tropical highland, cool and misty",
+    "moods": [
+      "Mountains",
+      "Monsoon",
+      "Adventure",
+      "Escape",
+      "Wildlife"
+    ],
+    "topDestinations": [
+      "Munnar Tea Estates",
+      "Eravikulam National Park (Nilgiri Tahr)",
+      "Idukki Arch Dam",
+      "Vagamon Pine Forests & Meadows",
+      "Thekkady & Periyar Tiger Reserve"
+    ],
+    "keyExperiences": [
+      "Walking through endless carpeted green tea slopes in Munnar",
+      "Spotting endangered Nilgiri Tahr on Anamudi slopes",
+      "Bamboo rafting in Periyar Tiger Reserve",
+      "Paragliding over Vagamon green meadows"
+    ],
+    "foodSpecialties": [
+      "Fresh Cardamom Tea",
+      "Tapioca with spicy Kanthari Fish Curry",
+      "Highland Duck Roast",
+      "Steamed Nenthram Pazham"
+    ],
+    "howToReach": "Nearest Airport: Cochin International (110 km). Nearest Railway: Aluva (105 km) or Kottayam (115 km).",
+    "pageUrl": "pages/districts/idukki.html"
+  },
+  {
+    "id": "kottayam",
+    "name": "Kottayam",
+    "nameMl": "കോട്ടയം",
+    "tagline": "The Land of Letters, Lakes & Rubber Groves",
+    "description": "Nestled between the Western Ghats and Vembanad Lake, Kottayam is the historic hub of Malayalam publishing, Syrian Christian cuisine, rubber plantations, and backwater bird havens.",
+    "image": "assets/images/districts/kottayam.png",
+    "region": "South-Central Kerala",
+    "bestSeason": "September to March",
+    "idealDays": "2 - 3 Days",
+    "altitude": "3 m above sea level",
+    "climate": "Humid tropical",
+    "moods": [
+      "Backwaters",
+      "Slow travel",
+      "Culture",
+      "Food"
+    ],
+    "topDestinations": [
+      "Kumarakom Bird Sanctuary",
+      "Vembanad Lake",
+      "Illikkal Kallu Peak",
+      "Marmorala Waterfalls",
+      "Poonjar Palace"
+    ],
+    "keyExperiences": [
+      "Birdwatching at Kumarakom sanctuary during migratory winter",
+      "Canoeing through quiet village waterways of Aymanam",
+      "Climbing up to the knife-edge cliff of Illikkal Kallu",
+      "Relishing Syrian Christian duck roast and toddy shop delicacies"
+    ],
+    "foodSpecialties": [
+      "Karimeen Pollichathu",
+      "Syrian Christian Beef Fry & Porotta",
+      "Appam with Duck Roast",
+      "Tapioca Fish Curry"
+    ],
+    "howToReach": "Nearest Airport: Cochin International (85 km). Major Railway: Kottayam (KTYM).",
+    "pageUrl": "pages/districts/kottayam.html"
+  },
+  {
+    "id": "alappuzha",
+    "name": "Alappuzha",
+    "nameMl": "ആലപ്പുഴ",
+    "tagline": "The Venice of the East & Backwater Capital",
+    "description": "An intricate maze of shimmering canals, endless paddy fields cultivated below sea level in Kuttanad, thatched houseboats, coir weaving, and the historic Alappuzha lighthouse.",
+    "image": "assets/images/districts/alappuzha.png",
+    "region": "South Kerala",
+    "bestSeason": "September to March (Boat race: August/September)",
+    "idealDays": "2 - 3 Days",
+    "altitude": "1 m (Below sea level in Kuttanad)",
+    "climate": "Tropical coastal maritime",
+    "moods": [
+      "Backwaters",
+      "Slow travel",
+      "Coast",
+      "Photography",
+      "Monsoon"
+    ],
+    "topDestinations": [
+      "Alappuzha Canals & Houseboat Circuit",
+      "Kuttanad Below-Sea-Level Polders",
+      "Marari Beach",
+      "Alappuzha Beach & Pier",
+      "Pathiramanal Island"
+    ],
+    "keyExperiences": [
+      "Overnight cruise on a luxury eco-kettuvallam houseboat",
+      "Gliding on a silent wooden canoe through village canals",
+      "Witnessing the roaring Nehru Trophy Snake Boat Race",
+      "Unwinding on the pristine white sands of Marari"
+    ],
+    "foodSpecialties": [
+      "Fresh Pearl Spot (Karimeen) Fry",
+      "Kuttanadan Duck Mappas",
+      "Prawns Theeyal",
+      "Toddy Shop Fish Head Curry"
+    ],
+    "howToReach": "Nearest Airport: Cochin International (78 km). Major Railway: Alappuzha (ALLP).",
+    "pageUrl": "pages/districts/alappuzha.html"
+  },
+  {
+    "id": "pathanamthitta",
+    "name": "Pathanamthitta",
+    "nameMl": "പത്തനംതിട്ട",
+    "tagline": "The Pilgrim Capital & Sacred Forest Hills",
+    "description": "The spiritual heartland of Kerala, bordered by dense forest reserves, sacred hill temples like Sabarimala, the mirror craft of Aranmula, and holy rivers Pamba and Achankovil.",
+    "image": "assets/images/districts/pathanamthitta.png",
+    "region": "South Kerala",
+    "bestSeason": "September to February",
+    "idealDays": "2 Days",
+    "altitude": "19 m above sea level",
+    "climate": "Tropical wet",
+    "moods": [
+      "Culture",
+      "Nature",
+      "Escape"
+    ],
+    "topDestinations": [
+      "Sabarimala Hill Temple",
+      "Aranmula Heritage Village (Metal Mirrors)",
+      "Gavi Eco-Tourism Reserve",
+      "Konni Elephant Reserve & Cage",
+      "Perunthenaruvi Waterfall"
+    ],
+    "keyExperiences": [
+      "Watching master craftsmen cast authentic Aranmula Kannadi metal mirrors",
+      "Deep forest safari and camping at misty Gavi",
+      "Seeing trained timber elephants at Konni training kraal",
+      "Attending the Aranmula Boat Race and grand Valla Sadya feast"
+    ],
+    "foodSpecialties": [
+      "Aranmula Valla Sadya (up to 64 dishes)",
+      "Unniyappam",
+      "Pamba river fish fry",
+      "Palada Pradhaman"
+    ],
+    "howToReach": "Nearest Airport: Trivandrum International (105 km) or Cochin (140 km). Nearest Railway: Chengannur (CNGR, 26 km) or Thiruvalla.",
+    "pageUrl": "pages/districts/pathanamthitta.html"
+  },
+  {
+    "id": "kollam",
+    "name": "Kollam",
+    "nameMl": "കൊല്ലം",
+    "tagline": "The Cashew Capital & Gateway to Ashtamudi",
+    "description": "An ancient international seaport on the shores of eight-armed Ashtamudi Lake, known for cashew processing, red-and-white Tangasseri lighthouse, and coastal boat cruises to Alappuzha.",
+    "image": "assets/images/districts/kollam.png",
+    "region": "South Kerala",
+    "bestSeason": "October to March",
+    "idealDays": "2 - 3 Days",
+    "altitude": "3 m above sea level",
+    "climate": "Maritime tropical",
+    "moods": [
+      "Backwaters",
+      "Coast",
+      "Slow travel",
+      "Food"
+    ],
+    "topDestinations": [
+      "Ashtamudi Lake & Munroe Island",
+      "Jatayu Earth's Center (World's Largest Bird Sculpture)",
+      "Thirumullavaram Beach",
+      "Tangasseri Lighthouse",
+      "Shendurney Wildlife Sanctuary"
+    ],
+    "keyExperiences": [
+      "Canoe tour along the narrow mangrove waterways of Munroe Island",
+      "Taking the cable car to Jatayu Earth's Center sculpture",
+      "Climbing 144 steps of Tangasseri Lighthouse for panoramic sea views",
+      "Boarding the legendary 8-hour DTPC ferry cruise to Alappuzha"
+    ],
+    "foodSpecialties": [
+      "Kollam style Fish Curry",
+      "Roasted Cashew delights",
+      "Tapioca with spicy sardine gravy",
+      "Crab roast"
+    ],
+    "howToReach": "Nearest Airport: Trivandrum International (65 km). Major Railway: Kollam Junction (QLN).",
+    "pageUrl": "pages/districts/kollam.html"
+  },
+  {
+    "id": "thiruvananthapuram",
+    "name": "Thiruvananthapuram",
+    "nameMl": "തിരുവനന്തപുരം",
+    "tagline": "The Regal Capital of Cliffs, Cove & Castles",
+    "description": "The stately capital city where the wealth and sanctity of Sree Padmanabhaswamy Temple blend with the dramatic red laterite cliffs of Varkala, Kovalam crescent beaches, and Ponmudi hills.",
+    "image": "assets/images/districts/thiruvananthapuram.png",
+    "region": "South Kerala",
+    "bestSeason": "September to March",
+    "idealDays": "3 - 4 Days",
+    "altitude": "10 m above sea level",
+    "climate": "Warm coastal tropical",
+    "moods": [
+      "Coast",
+      "Culture",
+      "Mountains",
+      "Slow travel",
+      "Photography"
+    ],
+    "topDestinations": [
+      "Sree Padmanabhaswamy Temple",
+      "Varkala Cliff Beach",
+      "Kovalam Lighthouse Beach",
+      "Ponmudi Golden Valley",
+      "Napier Museum & Kanakakunnu Palace"
+    ],
+    "keyExperiences": [
+      "Watching dramatic Arabian sunsets from atop the Varkala cliff cafes",
+      "Exploring the Dravidian stone architecture of Padmanabhaswamy Temple",
+      "Scenic morning drive up the 22 hairpin bends of Ponmudi hill station",
+      "Ayurvedic wellness massage in Kovalam"
+    ],
+    "foodSpecialties": [
+      "Trivandrum Style Sadya",
+      "Boli & Payasam",
+      "Kothu Porotta",
+      "Fish Pollichathu at cliffside shacks"
+    ],
+    "howToReach": "Trivandrum International Airport (TRV) in city center. Major Railway: Thiruvananthapuram Central (TVC).",
+    "pageUrl": "pages/districts/thiruvananthapuram.html"
+  }
+]

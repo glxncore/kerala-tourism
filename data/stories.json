@@ -1,0 +1,44 @@
+[
+  {
+    "id": "slow-morning-alappuzha",
+    "title": "A Slow Morning on the Waterways of Alappuzha",
+    "author": "Arun Varma",
+    "date": "August 2026",
+    "readTime": "5 min read",
+    "excerpt": "Before the engine-powered houseboats stir, the canals of Kuttanad belong only to kingfishers, coir canoes, and the silver flash of pearl spot fish.",
+    "content": "Dawn breaks over Vembanad Lake in gradients of pearl and charcoal. On the narrow waterways of Kuttanad, the world awakens without urgency. An elder paddles a narrow thoni stacked with fresh coconuts, nodding quietly as he glides past water lilies. In this corner of Kerala, cultivated below sea level, water is not a barrier but the very floor of existence.",
+    "tags": [
+      "Backwaters",
+      "Slow Travel",
+      "Alappuzha"
+    ]
+  },
+  {
+    "id": "monsoon-changes-munnar",
+    "title": "When the Edavappathi Monsoon Reclaims Munnar",
+    "author": "Devika Menon",
+    "date": "July 2026",
+    "readTime": "6 min read",
+    "excerpt": "The first storm clouds of June roll up the Western Ghats like dark velvet curtains, turning the emerald slopes into a theatre of mist and rain.",
+    "content": "To experience Kerala during the south-west monsoon is to understand why life here is so intensely green. In Munnar, rain is not an inconvenience to hide from; it is an atmospheric masterpiece. Streams that sleep through April roar back to life overnight. The smell of wet earth and bruised cardamom leaves settles over every stone.",
+    "tags": [
+      "Monsoon",
+      "Mountains",
+      "Idukki"
+    ]
+  },
+  {
+    "id": "finding-quiet-kerala",
+    "title": "Finding the Quiet Corners of God's Own Country",
+    "author": "Glen Johns",
+    "date": "June 2026",
+    "readTime": "7 min read",
+    "excerpt": "Step off the highway into the sacred groves of Kannur, the back alleys of Ponnani, and the mangrove tunnels of Munroe Island.",
+    "content": "Beyond the iconic tour stops lies an intimate Kerala waiting to be discovered by travellers willing to slow down. In village tea stalls where political debates mingle with the hiss of boiling milk, in ancient kavus where trees have stood undisturbed for centuries, you find the enduring soul of this coastal land.",
+    "tags": [
+      "Hidden Kerala",
+      "Culture",
+      "Offbeat"
+    ]
+  }
+]

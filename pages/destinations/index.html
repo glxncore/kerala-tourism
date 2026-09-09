@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations — ThΛnal (തണൽ)</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="../../index.html" class="brand-link">
+        <img src="../../assets/logos/thanal-logo.png" alt="Thanal Logo" class="brand-logo-img" onerror="this.src='../../data/ChatGPT Image Jun 2, 2026, 07_29_06 PM.png'">
+        <div class="brand-text">
+          <span class="brand-name">THΛNAL</span>
+          <span class="brand-name-ml">തണൽ</span>
+        </div>
+      </a>
+      <a href="../../index.html" class="btn btn-outline" style="padding: 6px 18px; font-size: 0.8125rem;">← Back Home</a>
+    </div>
+  </header>
+  <main class="container" style="padding-top: 120px; padding-bottom: 80px;">
+    <span class="eyebrow">Directory</span>
+    <h1 class="section-title">Kerala Destinations</h1>
+    <p class="section-subtitle" style="margin-bottom: 40px;">Explore trending and hidden places across God's Own Country.</p>
+    <div class="editorial-grid" id="destinations-list">
+      <!-- Destinations populated from ThanalData -->
+    </div>
+  </main>
+  <script src="../../js/data.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('destinations-list');
+      if (window.ThanalData && window.ThanalData.districts) {
+        container.innerHTML = window.ThanalData.districts.map(d => `
+          <div class="editorial-card">
+            <div class="card-image-box">
+              <img src="../../${d.image}" alt="${d.name}">
+              <span class="card-badge-pill">${d.region}</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">${d.name}</h3>
+              <p class="card-desc">${d.description}</p>
+              <a href="../districts/${d.id}.html" class="card-arrow" style="font-weight: 700; color: var(--forest); margin-top: 12px;">Discover ${d.name} →</a>
+            </div>
+          </div>
+        `).join('');
+      }
+    });
+  </script>
+</body>
+</html>

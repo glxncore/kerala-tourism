@@ -1,0 +1,175 @@
+/* ==========================================================================
+   THΛNAL (തണൽ) — RESPONSIVE DESIGN SYSTEM
+   Breakpoints: 1200px (Laptop), 992px (Tablet Land), 768px (Tablet), 480px (Mobile)
+   ========================================================================== */
+
+/* --- 1200px & Below (Compact Desktops / Laptops) --- */
+@media (max-width: 1200px) {
+  .district-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .editorial-grid,
+  .hidden-kerala-grid,
+  .food-grid,
+  .culture-grid,
+  .stories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .knowledge-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: var(--space-2xl);
+  }
+}
+
+/* --- 992px & Below (Tablets) --- */
+@media (max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .hero-visual-card {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .map-section-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .map-container-box {
+    max-width: 360px;
+  }
+
+  .season-right-now-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .responsible-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-controls-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- 768px & Below (Mobile & Small Tablets) --- */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: 76px;
+    left: 0;
+    right: 0;
+    background: var(--warm-white);
+    flex-direction: column;
+    padding: var(--space-xl);
+    border-bottom: 1px solid var(--border-medium);
+    box-shadow: var(--shadow-lg);
+    gap: var(--space-lg);
+    transform: translateY(-110%);
+    transition: transform var(--transition-normal);
+  }
+
+  .nav-menu.open {
+    transform: translateY(0);
+  }
+
+  .nav-toggle-btn {
+    display: flex;
+  }
+
+  .district-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 14px;
+    row-gap: 16px;
+  }
+
+  .district-image {
+    height: 180px;
+  }
+
+  .district-name h3 {
+    font-size: 1.25rem;
+  }
+
+  .editorial-grid,
+  .hidden-kerala-grid,
+  .experiences-track,
+  .food-grid,
+  .culture-grid,
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .knowledge-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-controls-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-search-wrapper {
+    flex-direction: column;
+    border-radius: var(--radius-card);
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .hero-search-input {
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  .hero-search-btn {
+    width: 100%;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    row-gap: var(--space-xl);
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+/* --- 480px & Below (Compact Mobile Screens) --- */
+@media (max-width: 480px) {
+  .district-container {
+    grid-template-columns: 1fr;
+  }
+
+  .district-image {
+    height: 200px;
+  }
+
+  .nav-container {
+    height: 68px;
+  }
+
+  .brand-name {
+    font-size: 1.25rem;
+  }
+
+  .section {
+    padding-top: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

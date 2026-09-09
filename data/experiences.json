@@ -1,0 +1,74 @@
+[
+  {
+    "id": "nature",
+    "title": "Nature & Forest Immersion",
+    "subtitle": "Untouched green lungs and biodiversity havens",
+    "icon": "🌿",
+    "description": "Walk under ancient canopies, explore biodiversity hotspots in Silent Valley and Periyar, and breathe mountain air.",
+    "places": [
+      "Silent Valley",
+      "Periyar Tiger Reserve",
+      "Gavi Forests"
+    ]
+  },
+  {
+    "id": "backwaters",
+    "title": "Slow Waterways & Canals",
+    "subtitle": "Life lived at the rhythm of the tide",
+    "icon": "🛶",
+    "description": "Drift through water lilies, listen to oar splashes, and witness life on Kerala's 900 kilometers of waterways.",
+    "places": [
+      "Vembanad Lake",
+      "Munroe Island",
+      "Valiyaparamba"
+    ]
+  },
+  {
+    "id": "culture",
+    "title": "Rituals, Art & Temple Lore",
+    "subtitle": "Living traditions unbroken for centuries",
+    "icon": "🎭",
+    "description": "From the fiery possession trance of Theyyam to the precise footwork of Kathakali and rhythmic roar of Chenda Melam.",
+    "places": [
+      "Kannur Kavus",
+      "Kalamandalam",
+      "Thrissur Temples"
+    ]
+  },
+  {
+    "id": "food",
+    "title": "Culinary Heritage",
+    "subtitle": "Spices that brought the world to our shores",
+    "icon": "🍛",
+    "description": "Fragrant coconut gravies, hand-crushed peppercorns, feather-light appams, and slow-simmered banana-leaf feasts.",
+    "places": [
+      "Kozhikode SM Street",
+      "Kuttanad Toddy Shops",
+      "Fort Kochi"
+    ]
+  },
+  {
+    "id": "wellness",
+    "title": "Ayurveda & Rejuvenation",
+    "subtitle": "The world's ancient healing cradle",
+    "icon": "🧘",
+    "description": "Replenish body and spirit during Karkidakam monsoon with authentic herbal medicated oils and panchakarma therapies.",
+    "places": [
+      "Kottakkal",
+      "Kovalam",
+      "Palakkad Retreats"
+    ]
+  },
+  {
+    "id": "adventure",
+    "title": "Peaks, Surfing & Wild Rapids",
+    "subtitle": "For the adventurous spirit",
+    "icon": "🥾",
+    "description": "Trek misty ridges, surf clean breaks at Varkala, or paraglide across the emerald hills of Vagamon.",
+    "places": [
+      "Vagamon",
+      "Chembra Peak",
+      "Varkala Cliff Beach"
+    ]
+  }
+]

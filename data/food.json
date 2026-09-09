@@ -1,0 +1,95 @@
+[
+  {
+    "id": "sadya",
+    "name": "Kerala Sadya",
+    "nameMl": "കേരള സദ്യ",
+    "tagline": "The Grand Banana Leaf Symphony",
+    "description": "A multi-course vegetarian feast served on a plantain leaf with up to 26 distinct dishes, culminating in velvety payasams.",
+    "districtOrigin": "All Kerala / Central Travancore",
+    "image": "assets/images/districts/thiruvananthapuram.png",
+    "keyItems": [
+      "Parippu",
+      "Sambar",
+      "Avial",
+      "Olan",
+      "Kalan",
+      "Inji Puli",
+      "Palada Pradhaman"
+    ]
+  },
+  {
+    "id": "appam-stew",
+    "name": "Appam & Ishtu",
+    "nameMl": "അപ്പവും ഇഷ്ടുവും",
+    "tagline": "Lacy Fermented Rice Crepes & Spiced Coconut Milk",
+    "description": "Crispy-edged, fluffy-centered fermented rice pancakes paired with a fragrant, mildly spiced coconut milk stew of vegetables or tender chicken.",
+    "districtOrigin": "Kottayam & Central Kerala",
+    "image": "assets/images/districts/kottayam.png",
+    "keyItems": [
+      "Fermented Toddy Appam",
+      "Vegetable Stew",
+      "Mutton Stew",
+      "Green Chili Garnish"
+    ]
+  },
+  {
+    "id": "malabar-parotta",
+    "name": "Malabar Parotta & Beef Roast",
+    "nameMl": "മലബാർ പൊറോട്ട & ബീഫ് റോസ്റ്റ്",
+    "tagline": "Flaky Layered Bread & Slow-Cooked Masala",
+    "description": "Legendary multi-layered, flaky flatbread paired with rich, slow-roasted beef or spicy coconut chicken curry with crispy fried coconut flakes.",
+    "districtOrigin": "Kozhikode & Malappuram",
+    "image": "assets/images/districts/kozhikode.png",
+    "keyItems": [
+      "Layered Maida Dough",
+      "Black Pepper Crust",
+      "Curry Leaves",
+      "Coconut Slices"
+    ]
+  },
+  {
+    "id": "karimeen-pollichathu",
+    "name": "Karimeen Pollichathu",
+    "nameMl": "കരിമീൻ പൊള്ളിച്ചത്",
+    "tagline": "Pearl Spot Fish Steamed in Plantain Leaf",
+    "description": "Freshwater pearl spot fish marinated in shallots, ginger, garlic, and Kashmiri chili, wrapped in charred banana leaf and slow-cooked to perfection.",
+    "districtOrigin": "Alappuzha & Kottayam",
+    "image": "assets/images/districts/alappuzha.png",
+    "keyItems": [
+      "Backwater Pearl Spot",
+      "Shallot Tomato Masala",
+      "Banana Leaf Wrap",
+      "Coconut Oil"
+    ]
+  },
+  {
+    "id": "puttu-kadala",
+    "name": "Puttu & Kadala Curry",
+    "nameMl": "പുട്ടും കടലക്കറിയും",
+    "tagline": "Steamed Rice Cylinders with Black Chickpea Gravy",
+    "description": "Steamed cylinders of coarsely ground rice flour layered with grated coconut, served with a fiery black chickpea and roasted coconut curry.",
+    "districtOrigin": "Ernakulam & Thrissur",
+    "image": "assets/images/districts/thrissur.png",
+    "keyItems": [
+      "Coarse Rice Powder",
+      "Fresh Coconut Grated",
+      "Spicy Kala Chana",
+      "Ripe Banana"
+    ]
+  },
+  {
+    "id": "pazham-pori-chaya",
+    "name": "Pazham Pori & Sulaimani Chaya",
+    "nameMl": "പഴം പൊരി & സുലൈമാനി",
+    "tagline": "Golden Banana Fritters with Spiced Black Tea",
+    "description": "Ripe, sweet Nendran bananas dipped in golden batter and deep-fried, paired with a piping-hot glass of cardamom-mint spiced black tea.",
+    "districtOrigin": "Malabar Shoreline",
+    "image": "assets/images/districts/kozhikode.png",
+    "keyItems": [
+      "Sweet Nendran Plantain",
+      "Turmeric Batter",
+      "Mint Cardamom Tea",
+      "Lemon Drop"
+    ]
+  }
+]

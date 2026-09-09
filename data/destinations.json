@@ -1,0 +1,231 @@
+[
+  {
+    "id": "munnar",
+    "name": "Munnar",
+    "district": "Idukki",
+    "category": "Trending",
+    "badge": "Editor's Pick",
+    "moods": [
+      "Mountains",
+      "Monsoon",
+      "Photography",
+      "Escape"
+    ],
+    "description": "Rolls of velvet emerald tea gardens, cascading waterfalls, and misty peaks in the high Western Ghats.",
+    "image": "assets/images/districts/idukki.png",
+    "highlights": [
+      "Tea Museum & Plantation Walks",
+      "Eravikulam National Park",
+      "Top Station Panorama"
+    ]
+  },
+  {
+    "id": "varkala",
+    "name": "Varkala",
+    "district": "Thiruvananthapuram",
+    "category": "Trending",
+    "badge": "Popular",
+    "moods": [
+      "Coast",
+      "Photography",
+      "Slow travel"
+    ],
+    "description": "Towering red laterite cliffs meeting the Arabian Sea with vibrant bohemian cafes and mineral springs.",
+    "image": "assets/images/districts/thiruvananthapuram.png",
+    "highlights": [
+      "Cliffside Sunsets",
+      "Papanasam Beach",
+      "Janardhana Swamy Temple"
+    ]
+  },
+  {
+    "id": "alappuzha-backwaters",
+    "name": "Alappuzha Canals",
+    "district": "Alappuzha",
+    "category": "Trending",
+    "badge": "Seasonal",
+    "moods": [
+      "Backwaters",
+      "Slow travel",
+      "Monsoon"
+    ],
+    "description": "Interlinked waterways, emerald polders of Kuttanad, and quiet moments on slow-drifting houseboats.",
+    "image": "assets/images/districts/alappuzha.png",
+    "highlights": [
+      "Overnight Houseboat",
+      "Kuttanad Village Cruise",
+      "Marari Beach Day Trip"
+    ]
+  },
+  {
+    "id": "wayanad-highlands",
+    "name": "Wayanad Highlands",
+    "district": "Wayanad",
+    "category": "Trending",
+    "badge": "Worth Discovering",
+    "moods": [
+      "Mountains",
+      "Wildlife",
+      "Adventure"
+    ],
+    "description": "Ancient caves with rock art, bamboo forests, spice trails, and misty coffee estates high in the Ghats.",
+    "image": "assets/images/districts/wayanad.png",
+    "highlights": [
+      "Edakkal Petroglyphs",
+      "Banasura Sagar Dam",
+      "Kuruva Island Rafting"
+    ]
+  },
+  {
+    "id": "fort-kochi",
+    "name": "Fort Kochi",
+    "district": "Ernakulam",
+    "category": "Trending",
+    "badge": "Editor's Pick",
+    "moods": [
+      "Culture",
+      "Food",
+      "Photography"
+    ],
+    "description": "Cantilevered Chinese fishing nets, colonial spice streets, Jewish quarter, and contemporary art galleries.",
+    "image": "assets/images/districts/ernakulam.png",
+    "highlights": [
+      "Chinese Nets at Twilight",
+      "Jew Town & Synagogue",
+      "Heritage Cycling"
+    ]
+  },
+  {
+    "id": "vagamon",
+    "name": "Vagamon Meadows",
+    "district": "Idukki",
+    "category": "Trending",
+    "badge": "Popular",
+    "moods": [
+      "Mountains",
+      "Escape",
+      "Adventure"
+    ],
+    "description": "Endless rolling green velvet meadows, whispering pine forests, and cool mountain breezes.",
+    "image": "assets/images/districts/idukki.png",
+    "highlights": [
+      "Pine Forest Canopy",
+      "Kurisumala Ashram",
+      "Misty Meadows Picnic"
+    ]
+  },
+  {
+    "id": "aymanam",
+    "name": "Aymanam",
+    "district": "Kottayam",
+    "category": "Hidden",
+    "badge": "Hidden Gem",
+    "moods": [
+      "Slow travel",
+      "Backwaters",
+      "Culture"
+    ],
+    "description": "The serene village immortalized in Arundhati Roy's 'God of Small Things', a sanctuary of river life and paddy rituals.",
+    "image": "assets/images/districts/kottayam.png",
+    "highlights": [
+      "Silent Village Canoeing",
+      "Traditional Kathakali Recitals",
+      "Heritage Homestays"
+    ]
+  },
+  {
+    "id": "maravanthuruthu",
+    "name": "Maravanthuruthu",
+    "district": "Kottayam",
+    "category": "Hidden",
+    "badge": "Responsible Tourism",
+    "moods": [
+      "Backwaters",
+      "Slow travel",
+      "Escape"
+    ],
+    "description": "An internationally acclaimed sustainable tourism village with revived waterways, artistic walls, and community canoe tours.",
+    "image": "assets/images/districts/kottayam.png",
+    "highlights": [
+      "Water Street Canal Walk",
+      "Midnight Night Kayaking",
+      "Local Coir Crafting"
+    ]
+  },
+  {
+    "id": "kadamakudy",
+    "name": "Kadamakudy Islands",
+    "district": "Ernakulam",
+    "category": "Hidden",
+    "badge": "Hidden Gem",
+    "moods": [
+      "Coast",
+      "Photography",
+      "Slow travel"
+    ],
+    "description": "A peaceful cluster of fourteen backwater islands with prawn filtration fields, water lilies, and migratory birds.",
+    "image": "assets/images/districts/ernakulam.png",
+    "highlights": [
+      "Prawn Farm Walks",
+      "Birdwatching at Dawn",
+      "Island Cycling Paths"
+    ]
+  },
+  {
+    "id": "ponnumthuruthu",
+    "name": "Ponnumthuruthu (Golden Island)",
+    "district": "Thiruvananthapuram",
+    "category": "Hidden",
+    "badge": "Hidden Gem",
+    "moods": [
+      "Escape",
+      "Culture",
+      "Slow travel"
+    ],
+    "description": "An uninhabited jewel in the middle of Anjengo Lake, sheltered by coconut canopies and an ancient Shiva-Parvathi shrine.",
+    "image": "assets/images/districts/thiruvananthapuram.png",
+    "highlights": [
+      "Country Canoe Crossing",
+      "Centuries-old Temple Grove",
+      "Untouched Birdlife"
+    ]
+  },
+  {
+    "id": "ponnani",
+    "name": "Ponnani Port & Estuary",
+    "district": "Malappuram",
+    "category": "Hidden",
+    "badge": "Cultural Jewel",
+    "moods": [
+      "Culture",
+      "Coast",
+      "Photography"
+    ],
+    "description": "The ancient Mecca of Malabar, where the sacred Bharathapuzha meets the Arabian sea amidst historic minarets and dhows.",
+    "image": "assets/images/districts/malappuram.png",
+    "highlights": [
+      "Ponnani Juma Masjid (1519)",
+      "Estuary Walk at Biyyam Kayal",
+      "Malabar Dhow Watching"
+    ]
+  },
+  {
+    "id": "muzhappilangad",
+    "name": "Muzhappilangad Beach",
+    "district": "Kannur",
+    "category": "Hidden",
+    "badge": "Worth Discovering",
+    "moods": [
+      "Coast",
+      "Adventure",
+      "Photography"
+    ],
+    "description": "Asia's longest drive-in beach, where you can drive 4 kilometers right along the hard-packed sands while waves lap the wheels.",
+    "image": "assets/images/districts/kannur.png",
+    "highlights": [
+      "Sunset Coastal Drive",
+      "Low Tide Walk to Dharmadam Island",
+      "Seafood Beach Shacks"
+    ]
+  }
+]
