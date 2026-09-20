@@ -3,37 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ThΛnal (തണൽ) — Premium Kerala Travel Discovery & Guide</title>
+  <title>THΛNAL (തണൽ) — Premium Kerala Travel Discovery & Guide</title>
   <meta name="description" content="Discover Kerala differently. A luxury travel editorial and interactive discovery platform across Kerala's 14 districts, tranquil backwaters, mist-shrouded highlands, and cultural traditions.">
   <meta name="keywords" content="Kerala tourism, Thanal, God's Own Country, Munnar, Varkala, Alappuzha backwaters, Wayanad, Kerala travel guide">
   <meta property="og:title" content="ThΛnal (തണൽ) — Discover Kerala Differently">
   <meta property="og:description" content="Luxury editorial and interactive guide to discovering the tranquil soul of Kerala.">
   <meta property="og:type" content="website">
 
-  <!-- Typography: Cormorant Garamond (Editorial Serif), Manrope (Modern UI), Noto Sans Malayalam ->
+  <!-- Typography: Cormorant Garamond, Manrope, Noto Sans Malayalam -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Manrope:wght@300;400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Leaflet CSS for Interactive Geographic Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
   <!-- Core Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- Preserving original style.css fallback reference for backward compatibility ->
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <!-- =========================================================================
-       1. NAVIGATION BAR
+       1. NAVIGATION BAR (STATIC LOGO, CLEAN RESPONSIVE LAYOUT)
        ========================================================================= -->
   <header class="site-header" role="banner">
     <div class="nav-container">
       <a href="index.html" class="brand-link" aria-label="Thanal Home">
-        <img src="assets/logos/thanal-logo.png" alt="ThΛnal Logo" class="brand-logo-img" onerror="this.src='data/ChatGPT Image Jun 2, 2026, 07_29_06 PM.png'">
-        <div class="brand-text">
-          <span class="brand-name">THΛNAL</span>
-          <span class="brand-name-ml">തണൽ</span>
-        </div>
+        <img src="assets/logos/thanal-logo.png" alt="ThΛnal (തണൽ)" class="brand-logo-img">
       </a>
 
       <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
@@ -63,11 +60,12 @@
   </header>
 
   <!-- =========================================================================
-       2. HERO SECTION
+       2. HERO SECTION & IMMERSIVE DESTINATION SLIDESHOW ("WINDOW INTO KERALA")
        ========================================================================= -->
   <section class="hero-section" id="hero">
     <div class="container">
       <div class="hero-grid">
+        <!-- Introduction & Search -->
         <div class="hero-content">
           <div class="hero-badge-pill">
             <span class="hero-badge-dot"></span>
@@ -99,14 +97,148 @@
           </div>
         </div>
 
+        <!-- Immersive Destination Slideshow ("Window into Kerala") -->
         <div class="hero-visual-col">
-          <div class="hero-visual-card">
-            <img src="assets/images/districts/wayanad.png" alt="Misty tea gardens and Western Ghats of Kerala" class="hero-visual-img" onerror="this.src='images/wayanad.png'">
-            <div class="hero-visual-overlay">
-              <span class="hero-visual-badge">Featured Destination</span>
-              <h2 class="hero-visual-title">Wayanad Highlands</h2>
-              <p class="hero-visual-desc">Neolithic caves, cloud-wrapped ridges & cardamom rainforests.</p>
+          <div class="hero-destination-window" role="region" aria-label="Featured Kerala Destinations Slideshow">
+            
+            <!-- Slide 1: Wayanad -->
+            <div class="hero-slide-item active" data-index="0" aria-hidden="false">
+              <img src="assets/images/districts/wayanad.png" alt="Wayanad highlands and mist-covered mountains" class="hero-slide-img">
+              <!-- Subtle atmospheric mist overlay -->
+              <div class="slide-atmosphere-layer" style="background: radial-gradient(ellipse at 50% 30%, rgba(255,255,255,0.18) 0%, transparent 65%); animation: forestMistDrift 14s infinite ease-in-out;"></div>
+              <div class="hero-slide-vignette">
+                <div class="hero-slide-counter"><span class="slide-num-current">01</span> / 06</div>
+                <h2 class="hero-slide-title">Wayanad</h2>
+                <p class="hero-slide-desc">Mist-covered mountains, forests and hidden waterfalls.</p>
+                <div class="hero-slideshow-nav">
+                  <div class="hero-slideshow-dots" role="tablist" aria-label="Slideshow pagination">
+                    <button class="slideshow-dot active" data-slide="0" aria-label="Slide 1 Wayanad"></button>
+                    <button class="slideshow-dot" data-slide="1" aria-label="Slide 2 Munnar"></button>
+                    <button class="slideshow-dot" data-slide="2" aria-label="Slide 3 Alappuzha"></button>
+                    <button class="slideshow-dot" data-slide="3" aria-label="Slide 4 Varkala"></button>
+                    <button class="slideshow-dot" data-slide="4" aria-label="Slide 5 Fort Kochi"></button>
+                    <button class="slideshow-dot" data-slide="5" aria-label="Slide 6 Bekal"></button>
+                  </div>
+                  <a href="pages/districts/wayanad.html" class="slideshow-dest-link">Explore Wayanad →</a>
+                </div>
+              </div>
             </div>
+
+            <!-- Slide 2: Munnar -->
+            <div class="hero-slide-item" data-index="1" aria-hidden="true">
+              <img src="assets/images/districts/idukki.png" alt="Munnar rolling emerald tea gardens" class="hero-slide-img">
+              <!-- Subtle atmospheric cloud overlay -->
+              <div class="slide-atmosphere-layer" style="background: radial-gradient(ellipse at 70% 25%, rgba(255,255,255,0.15) 0%, transparent 60%); animation: slowCloudDrift 18s infinite ease-in-out;"></div>
+              <div class="hero-slide-vignette">
+                <div class="hero-slide-counter"><span class="slide-num-current">02</span> / 06</div>
+                <h2 class="hero-slide-title">Munnar</h2>
+                <p class="hero-slide-desc">Endless rolling tea gardens, misty valleys and cool mountain air.</p>
+                <div class="hero-slideshow-nav">
+                  <div class="hero-slideshow-dots" role="tablist">
+                    <button class="slideshow-dot" data-slide="0" aria-label="Slide 1 Wayanad"></button>
+                    <button class="slideshow-dot active" data-slide="1" aria-label="Slide 2 Munnar"></button>
+                    <button class="slideshow-dot" data-slide="2" aria-label="Slide 3 Alappuzha"></button>
+                    <button class="slideshow-dot" data-slide="3" aria-label="Slide 4 Varkala"></button>
+                    <button class="slideshow-dot" data-slide="4" aria-label="Slide 5 Fort Kochi"></button>
+                    <button class="slideshow-dot" data-slide="5" aria-label="Slide 6 Bekal"></button>
+                  </div>
+                  <a href="pages/districts/idukki.html" class="slideshow-dest-link">Explore Munnar →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Alappuzha -->
+            <div class="hero-slide-item" data-index="2" aria-hidden="true">
+              <img src="assets/images/districts/alappuzha.png" alt="Alappuzha tranquil backwaters and houseboats" class="hero-slide-img">
+              <!-- Subtle water movement layer -->
+              <div class="slide-atmosphere-layer" style="background: linear-gradient(180deg, transparent 65%, rgba(111,154,154,0.2) 100%); animation: waterRippleWave 6s infinite ease-in-out;"></div>
+              <div class="hero-slide-vignette">
+                <div class="hero-slide-counter"><span class="slide-num-current">03</span> / 06</div>
+                <h2 class="hero-slide-title">Alappuzha</h2>
+                <p class="hero-slide-desc">Shimmering backwaters, tranquil houseboats and village waterways.</p>
+                <div class="hero-slideshow-nav">
+                  <div class="hero-slideshow-dots" role="tablist">
+                    <button class="slideshow-dot" data-slide="0"></button>
+                    <button class="slideshow-dot" data-slide="1"></button>
+                    <button class="slideshow-dot active" data-slide="2"></button>
+                    <button class="slideshow-dot" data-slide="3"></button>
+                    <button class="slideshow-dot" data-slide="4"></button>
+                    <button class="slideshow-dot" data-slide="5"></button>
+                  </div>
+                  <a href="pages/districts/alappuzha.html" class="slideshow-dest-link">Explore Alappuzha →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4: Varkala -->
+            <div class="hero-slide-item" data-index="3" aria-hidden="true">
+              <img src="assets/images/districts/thiruvananthapuram.png" alt="Varkala red laterite cliffs and Arabian Sea" class="hero-slide-img">
+              <!-- Subtle coastal breeze layer -->
+              <div class="slide-atmosphere-layer" style="background: radial-gradient(circle at 20% 80%, rgba(201,168,117,0.15) 0%, transparent 60%);"></div>
+              <div class="hero-slide-vignette">
+                <div class="hero-slide-counter"><span class="slide-num-current">04</span> / 06</div>
+                <h2 class="hero-slide-title">Varkala</h2>
+                <p class="hero-slide-desc">Dramatic laterite cliffs overlooking the Arabian Sea.</p>
+                <div class="hero-slideshow-nav">
+                  <div class="hero-slideshow-dots" role="tablist">
+                    <button class="slideshow-dot" data-slide="0"></button>
+                    <button class="slideshow-dot" data-slide="1"></button>
+                    <button class="slideshow-dot" data-slide="2"></button>
+                    <button class="slideshow-dot active" data-slide="3"></button>
+                    <button class="slideshow-dot" data-slide="4"></button>
+                    <button class="slideshow-dot" data-slide="5"></button>
+                  </div>
+                  <a href="pages/districts/thiruvananthapuram.html" class="slideshow-dest-link">Explore Varkala →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5: Fort Kochi -->
+            <div class="hero-slide-item" data-index="4" aria-hidden="true">
+              <img src="assets/images/districts/ernakulam.png" alt="Fort Kochi Chinese fishing nets and historic harbor" class="hero-slide-img">
+              <!-- Twilight harbor wash layer -->
+              <div class="slide-atmosphere-layer" style="background: radial-gradient(ellipse at 80% 40%, rgba(166,106,76,0.14) 0%, transparent 60%);"></div>
+              <div class="hero-slide-vignette">
+                <div class="hero-slide-counter"><span class="slide-num-current">05</span> / 06</div>
+                <h2 class="hero-slide-title">Fort Kochi</h2>
+                <p class="hero-slide-desc">Historic spice warehouses, Chinese fishing nets and colonial heritage.</p>
+                <div class="hero-slideshow-nav">
+                  <div class="hero-slideshow-dots" role="tablist">
+                    <button class="slideshow-dot" data-slide="0"></button>
+                    <button class="slideshow-dot" data-slide="1"></button>
+                    <button class="slideshow-dot" data-slide="2"></button>
+                    <button class="slideshow-dot" data-slide="3"></button>
+                    <button class="slideshow-dot active" data-slide="4"></button>
+                    <button class="slideshow-dot" data-slide="5"></button>
+                  </div>
+                  <a href="pages/districts/ernakulam.html" class="slideshow-dest-link">Explore Kochi →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6: Bekal -->
+            <div class="hero-slide-item" data-index="5" aria-hidden="true">
+              <img src="assets/images/districts/kasaragod.png" alt="Bekal Fort ramparts and sea coast" class="hero-slide-img">
+              <!-- Ocean mist layer -->
+              <div class="slide-atmosphere-layer" style="background: radial-gradient(circle at 50% 60%, rgba(169,196,194,0.16) 0%, transparent 65%);"></div>
+              <div class="hero-slide-vignette">
+                <div class="hero-slide-counter"><span class="slide-num-current">06</span> / 06</div>
+                <h2 class="hero-slide-title">Bekal</h2>
+                <p class="hero-slide-desc">Centuries-old sea fort, golden sands and sweeping ocean views.</p>
+                <div class="hero-slideshow-nav">
+                  <div class="hero-slideshow-dots" role="tablist">
+                    <button class="slideshow-dot" data-slide="0"></button>
+                    <button class="slideshow-dot" data-slide="1"></button>
+                    <button class="slideshow-dot" data-slide="2"></button>
+                    <button class="slideshow-dot" data-slide="3"></button>
+                    <button class="slideshow-dot" data-slide="4"></button>
+                    <button class="slideshow-dot active" data-slide="5"></button>
+                  </div>
+                  <a href="pages/districts/kasaragod.html" class="slideshow-dest-link">Explore Bekal →</a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -114,20 +246,109 @@
   </section>
 
   <!-- =========================================================================
-       3. INTERACTIVE KERALA MAP SECTION
+       3. EXPLORE SECTION (UNIQUE ATMOSPHERE: PALMS, CLOUDS & BIRDS)
        ========================================================================= -->
-  <section class="section section-ivory" id="kerala-map">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="eyebrow">Cartographic Discovery</span>
-        <h2 class="section-title">The Illustrated Map of Kerala</h2>
+  <section class="section section-atmosphere-explore" id="explore">
+    <!-- Atmospheric SVG Palms left & right -->
+    <svg class="explore-palm-silhouette-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" fill="#173B32">
+      <path d="M10,120 Q20,60 70,20 Q40,35 15,65 M70,20 Q85,45 60,70 M70,20 Q60,5 95,0 Q70,20 85,45 M10,120 Q15,70 45,35" stroke="#173B32" stroke-width="2" fill="none"/>
+    </svg>
+    <svg class="explore-palm-silhouette-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" fill="#173B32">
+      <path d="M90,120 Q80,60 30,20 Q60,35 85,65 M30,20 Q15,45 40,70 M30,20 Q40,5 5,0 Q30,20 15,45 M90,120 Q85,70 55,35" stroke="#173B32" stroke-width="2" fill="none"/>
+    </svg>
+
+    <!-- Cloud and Flying Birds Animation Layers -->
+    <div class="explore-cloud-backdrop"></div>
+    <div class="explore-flying-birds">
+      <svg width="60" height="24" viewBox="0 0 60 24" fill="none" stroke="#173B32" stroke-width="1.6" opacity="0.45">
+        <path d="M2,14 Q10,2 18,14 Q26,2 34,14" />
+        <path d="M36,8 Q42,0 48,8 Q54,0 60,8" />
+      </svg>
+    </div>
+
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="section-header">
+        <span class="eyebrow">The ThΛnal Philosophy</span>
+        <h2 class="section-title">Travel slow, observe closely, leave no footprint.</h2>
         <p class="section-subtitle">
-          From Kasaragod in the north to Thiruvananthapuram in the south, explore all 14 distinct administrative and cultural districts along the Western Ghats and Arabian Sea.
+          ThΛnal (തണൽ) translates to shade or sheltering foliage in Malayalam. In a land shaped by monsoon rains and tropical sunlight, shade is where travelers rest, stories are shared, and authentic culture thrives.
         </p>
       </div>
 
-      <div class="map-section-grid">
-        <!-- Interactive Vector Map Box -->
+      <div class="editorial-grid">
+        <div class="editorial-card">
+          <div class="card-image-box">
+            <img src="assets/images/districts/alappuzha.png" alt="Kerala backwaters">
+            <span class="card-badge-pill">900 KM Waterways</span>
+          </div>
+          <div class="card-body">
+            <span class="card-district-sub">Aquatic Life</span>
+            <h3 class="card-title">Backwater Rhythm</h3>
+            <p class="card-desc">Experience life where waterways are highways, village canoes carry the morning milk, and homes open onto water lilies.</p>
+          </div>
+        </div>
+
+        <div class="editorial-card">
+          <div class="card-image-box">
+            <img src="assets/images/districts/idukki.png" alt="Highland Western Ghats">
+            <span class="card-badge-pill">High Ranges</span>
+          </div>
+          <div class="card-body">
+            <span class="card-district-sub">Western Ghats</span>
+            <h3 class="card-title">Cloud Forests & Spices</h3>
+            <p class="card-desc">Breathe crisp mountain air across emerald tea carpets, wild elephant trails, and fragrant cardamom ridges.</p>
+          </div>
+        </div>
+
+        <div class="editorial-card">
+          <div class="card-image-box">
+            <img src="assets/images/districts/kannur.png" alt="Theyyam and Malabar lore">
+            <span class="card-badge-pill">Living Heritage</span>
+          </div>
+          <div class="card-body">
+            <span class="card-district-sub">Ritual Arts</span>
+            <h3 class="card-title">Ancient Sacred Dances</h3>
+            <p class="card-desc">Witness living embodiments of deities in Theyyam trance ceremonies and centuries of unbroken martial Kalaripayattu tradition.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. MAP SECTION (UNIQUE ATMOSPHERE: LEAFLET ROUTE MAP + SVG CARTOGRAPHY)
+       ========================================================================= -->
+  <section class="section section-atmosphere-map" id="kerala-map">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="eyebrow">Cartographic Discovery</span>
+        <h2 class="section-title">Geographic Exploration of Kerala</h2>
+        <p class="section-subtitle">
+          Follow the travel routes, mountain passes, and backwater arteries. Explore Kerala through the interactive route map with animated pathways or the classic cartographic view.
+        </p>
+      </div>
+
+      <!-- Map View Switcher -->
+      <div class="map-view-toggle-bar">
+        <button class="map-toggle-btn active" id="btn-show-leaflet">🗺 Interactive Route Map (Leaflet)</button>
+        <button class="map-toggle-btn" id="btn-show-svg">🎨 Illustrated Cartographic Map</button>
+      </div>
+
+      <!-- View 1: Functional Leaflet Map with Routes & Markers -->
+      <div id="leaflet-view-wrapper" style="position: relative;">
+        <div id="leaflet-kerala-map"></div>
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 14px; padding: 10px 16px; background: var(--warm-white); border-radius: var(--radius-md); border: 1px solid var(--border-medium); font-size: 0.8125rem;">
+          <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+            <span style="display: flex; align-items: center; gap: 6px;"><span style="width: 10px; height: 10px; border-radius: 50%; background: var(--terracotta); display: inline-block;"></span> <strong>Destinations</strong></span>
+            <span style="display: flex; align-items: center; gap: 6px;"><span style="width: 24px; height: 3px; border-top: 3px dashed #A66A4C; display: inline-block;"></span> <strong>Spice & Waterway Trail</strong></span>
+            <span style="display: flex; align-items: center; gap: 6px;">🛶 <strong>Live Watercraft Motion</strong></span>
+          </div>
+          <span style="color: var(--text-muted);">Click any marker or district boundary to explore</span>
+        </div>
+      </div>
+
+      <!-- View 2: Illustrated Vector Map with Detailed Sidebar -->
+      <div id="svg-view-wrapper" class="map-section-grid" style="display: none;">
         <div class="map-card-wrapper">
           <div class="map-container-box">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 880" class="kerala-interactive-svg" aria-label="Authentic Interactive Map of Kerala">
@@ -240,7 +461,6 @@
           </div>
         </div>
 
-        <!-- Dynamic District Details Panel -->
         <div class="map-info-panel">
           <div class="map-info-header">
             <span class="eyebrow" id="map-info-tagline">North Kerala (Malabar)</span>
@@ -264,59 +484,7 @@
           </a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- =========================================================================
-       4. DISCOVER KERALA PHILOSOPHY
-       ========================================================================= -->
-  <section class="section" id="explore">
-    <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">The ThΛnal Philosophy</span>
-        <h2 class="section-title">Travel slow, observe closely, leave no footprint.</h2>
-        <p class="section-subtitle">
-          ThΛnal (തണൽ) translates to shade or sheltering foliage in Malayalam. In a land shaped by monsoon rains and tropical sunlight, shade is where travelers rest, stories are shared, and authentic culture thrives.
-        </p>
-      </div>
-
-      <div class="editorial-grid">
-        <div class="editorial-card">
-          <div class="card-image-box">
-            <img src="assets/images/districts/alappuzha.png" alt="Kerala backwaters" onerror="this.src='images/alappuzha.png'">
-            <span class="card-badge-pill">900 KM Waterways</span>
-          </div>
-          <div class="card-body">
-            <span class="card-district-sub">Aquatic Life</span>
-            <h3 class="card-title">Backwater Rhythm</h3>
-            <p class="card-desc">Experience life where waterways are highways, village canoes carry the morning milk, and homes open onto water lilies.</p>
-          </div>
-        </div>
-
-        <div class="editorial-card">
-          <div class="card-image-box">
-            <img src="assets/images/districts/idukki.png" alt="Highland Western Ghats" onerror="this.src='images/idukki.png'">
-            <span class="card-badge-pill">High Ranges</span>
-          </div>
-          <div class="card-body">
-            <span class="card-district-sub">Western Ghats</span>
-            <h3 class="card-title">Cloud Forests & Spices</h3>
-            <p class="card-desc">Breathe crisp mountain air across emerald tea carpets, wild elephant trails, and fragrant cardamom ridges.</p>
-          </div>
-        </div>
-
-        <div class="editorial-card">
-          <div class="card-image-box">
-            <img src="assets/images/districts/kannur.png" alt="Theyyam and Malabar lore" onerror="this.src='images/kannur.png'">
-            <span class="card-badge-pill">Living Heritage</span>
-          </div>
-          <div class="card-body">
-            <span class="card-district-sub">Ritual Arts</span>
-            <h3 class="card-title">Ancient Sacred Dances</h3>
-            <p class="card-desc">Witness living embodiments of deities in Theyyam trance ceremonies and centuries of unbroken martial Kalaripayattu tradition.</p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -337,7 +505,7 @@
         <!-- Munnar -->
         <article class="editorial-card trending-card-item" data-moods="Mountains,Monsoon,Photography,Escape">
           <div class="card-image-box">
-            <img src="assets/images/districts/idukki.png" alt="Munnar Tea Hills" onerror="this.src='images/idukki.png'">
+            <img src="assets/images/districts/idukki.png" alt="Munnar Tea Hills">
             <span class="card-badge-pill">Editor's Pick</span>
             <button class="card-save-btn" data-id="munnar" onclick="toggleFavorite({ id: 'munnar', title: 'Munnar Tea Hills', subtitle: 'Idukki District', type: 'Highland', url: 'pages/districts/idukki.html' })" aria-label="Save Munnar">♡</button>
           </div>
@@ -355,7 +523,7 @@
         <!-- Varkala -->
         <article class="editorial-card trending-card-item" data-moods="Coast,Photography,Slow travel">
           <div class="card-image-box">
-            <img src="assets/images/districts/thiruvananthapuram.png" alt="Varkala Cliff Beach" onerror="this.src='images/thiruvananthapuram.png'">
+            <img src="assets/images/districts/thiruvananthapuram.png" alt="Varkala Cliff Beach">
             <span class="card-badge-pill">Popular</span>
             <button class="card-save-btn" data-id="varkala" onclick="toggleFavorite({ id: 'varkala', title: 'Varkala Cliff Beach', subtitle: 'Thiruvananthapuram', type: 'Coast', url: 'pages/districts/thiruvananthapuram.html' })" aria-label="Save Varkala">♡</button>
           </div>
@@ -373,7 +541,7 @@
         <!-- Alappuzha -->
         <article class="editorial-card trending-card-item" data-moods="Backwaters,Slow travel,Monsoon">
           <div class="card-image-box">
-            <img src="assets/images/districts/alappuzha.png" alt="Alappuzha Canals" onerror="this.src='images/alappuzha.png'">
+            <img src="assets/images/districts/alappuzha.png" alt="Alappuzha Canals">
             <span class="card-badge-pill">Seasonal</span>
             <button class="card-save-btn" data-id="alappuzha-canals" onclick="toggleFavorite({ id: 'alappuzha-canals', title: 'Alappuzha Canals', subtitle: 'Alappuzha', type: 'Backwaters', url: 'pages/districts/alappuzha.html' })" aria-label="Save Alappuzha">♡</button>
           </div>
@@ -423,10 +591,12 @@
   </section>
 
   <!-- =========================================================================
-       7. PRESERVED DISTRICT GALLERY
+       7. DISTRICTS SECTION (UNIQUE ATMOSPHERE: FAINT PALM SILHOUETTES & CLOUDS)
        (Preserving user's original layout, cards & hover interaction + refined)
        ========================================================================= -->
-  <section class="section section-ivory" id="districts">
+  <section class="section section-atmosphere-districts" id="districts">
+    <div class="districts-backdrop-palms"></div>
+
     <div class="container">
       <div class="section-header text-center">
         <span class="eyebrow">The Complete Tapestry</span>
@@ -441,7 +611,7 @@
 
         <div class="district-card" onclick="openDistrict('Kasaragod')">
           <div class="district-image">
-            <img src="assets/images/districts/kasaragod.png" alt="Kasaragod" onerror="this.src='images/kasargod.png'">
+            <img src="assets/images/districts/kasaragod.png" alt="Kasaragod">
             <div class="district-name">
               <h3>Kasaragod</h3>
               <span class="district-name-ml">കാസർഗോഡ്</span>
@@ -452,7 +622,7 @@
 
         <div class="district-card" onclick="openDistrict('Kannur')">
           <div class="district-image">
-            <img src="assets/images/districts/kannur.png" alt="Kannur" onerror="this.src='images/kannur.png'">
+            <img src="assets/images/districts/kannur.png" alt="Kannur">
             <div class="district-name">
               <h3>Kannur</h3>
               <span class="district-name-ml">കണ്ണൂർ</span>
@@ -463,7 +633,7 @@
 
         <div class="district-card" onclick="openDistrict('Wayanad')">
           <div class="district-image">
-            <img src="assets/images/districts/wayanad.png" alt="Wayanad" onerror="this.src='images/wayanad.png'">
+            <img src="assets/images/districts/wayanad.png" alt="Wayanad">
             <div class="district-name">
               <h3>Wayanad</h3>
               <span class="district-name-ml">വയനാട്</span>
@@ -474,7 +644,7 @@
 
         <div class="district-card" onclick="openDistrict('Kozhikode')">
           <div class="district-image">
-            <img src="assets/images/districts/kozhikode.png" alt="Kozhikode" onerror="this.src='images/kozhikode.png'">
+            <img src="assets/images/districts/kozhikode.png" alt="Kozhikode">
             <div class="district-name">
               <h3>Kozhikode</h3>
               <span class="district-name-ml">കോഴിക്കോട്</span>
@@ -485,7 +655,7 @@
 
         <div class="district-card" onclick="openDistrict('Malappuram')">
           <div class="district-image">
-            <img src="assets/images/districts/malappuram.png" alt="Malappuram" onerror="this.src='images/malapuram.png'">
+            <img src="assets/images/districts/malappuram.png" alt="Malappuram">
             <div class="district-name">
               <h3>Malappuram</h3>
               <span class="district-name-ml">മലപ്പുറം</span>
@@ -496,7 +666,7 @@
 
         <div class="district-card" onclick="openDistrict('Palakkad')">
           <div class="district-image">
-            <img src="assets/images/districts/palakkad.png" alt="Palakkad" onerror="this.src='images/palakkad.png'">
+            <img src="assets/images/districts/palakkad.png" alt="Palakkad">
             <div class="district-name">
               <h3>Palakkad</h3>
               <span class="district-name-ml">പാലക്കാട്</span>
@@ -507,7 +677,7 @@
 
         <div class="district-card" onclick="openDistrict('Thrissur')">
           <div class="district-image">
-            <img src="assets/images/districts/thrissur.png" alt="Thrissur" onerror="this.src='images/thrissur.png'">
+            <img src="assets/images/districts/thrissur.png" alt="Thrissur">
             <div class="district-name">
               <h3>Thrissur</h3>
               <span class="district-name-ml">തൃശ്ശൂർ</span>
@@ -518,7 +688,7 @@
 
         <div class="district-card" onclick="openDistrict('Ernakulam')">
           <div class="district-image">
-            <img src="assets/images/districts/ernakulam.png" alt="Ernakulam" onerror="this.src='images/ernakulam.png'">
+            <img src="assets/images/districts/ernakulam.png" alt="Ernakulam">
             <div class="district-name">
               <h3>Ernakulam</h3>
               <span class="district-name-ml">എറണാകുളം</span>
@@ -529,7 +699,7 @@
 
         <div class="district-card" onclick="openDistrict('Idukki')">
           <div class="district-image">
-            <img src="assets/images/districts/idukki.png" alt="Idukki" onerror="this.src='images/idukki.png'">
+            <img src="assets/images/districts/idukki.png" alt="Idukki">
             <div class="district-name">
               <h3>Idukki</h3>
               <span class="district-name-ml">ഇടുക്കി</span>
@@ -540,7 +710,7 @@
 
         <div class="district-card" onclick="openDistrict('Kottayam')">
           <div class="district-image">
-            <img src="assets/images/districts/kottayam.png" alt="Kottayam" onerror="this.src='images/kottayam.png'">
+            <img src="assets/images/districts/kottayam.png" alt="Kottayam">
             <div class="district-name">
               <h3>Kottayam</h3>
               <span class="district-name-ml">കോട്ടയം</span>
@@ -551,7 +721,7 @@
 
         <div class="district-card" onclick="openDistrict('Alappuzha')">
           <div class="district-image">
-            <img src="assets/images/districts/alappuzha.png" alt="Alappuzha" onerror="this.src='images/alappuzha.png'">
+            <img src="assets/images/districts/alappuzha.png" alt="Alappuzha">
             <div class="district-name">
               <h3>Alappuzha</h3>
               <span class="district-name-ml">ആലപ്പുഴ</span>
@@ -562,7 +732,7 @@
 
         <div class="district-card" onclick="openDistrict('Pathanamthitta')">
           <div class="district-image">
-            <img src="assets/images/districts/pathanamthitta.png" alt="Pathanamthitta" onerror="this.src='images/pathanamthitta.png'">
+            <img src="assets/images/districts/pathanamthitta.png" alt="Pathanamthitta">
             <div class="district-name">
               <h3>Pathanamthitta</h3>
               <span class="district-name-ml">പത്തനംതിട്ട</span>
@@ -573,7 +743,7 @@
 
         <div class="district-card" onclick="openDistrict('Kollam')">
           <div class="district-image">
-            <img src="assets/images/districts/kollam.png" alt="Kollam" onerror="this.src='images/kollam.png'">
+            <img src="assets/images/districts/kollam.png" alt="Kollam">
             <div class="district-name">
               <h3>Kollam</h3>
               <span class="district-name-ml">കൊല്ലം</span>
@@ -584,7 +754,7 @@
 
         <div class="district-card" onclick="openDistrict('Thiruvananthapuram')">
           <div class="district-image">
-            <img src="assets/images/districts/thiruvananthapuram.png" alt="Thiruvananthapuram" onerror="this.src='images/thiruvananthapuram.png'">
+            <img src="assets/images/districts/thiruvananthapuram.png" alt="Thiruvananthapuram">
             <div class="district-name">
               <h3>Thiruvananthapuram</h3>
               <span class="district-name-ml">തിരുവനന്തപുരം</span>
@@ -598,10 +768,15 @@
   </section>
 
   <!-- =========================================================================
-       8. HIDDEN KERALA SECTION
+       8. HIDDEN KERALA SECTION (UNIQUE ATMOSPHERE: MYSTICAL FOREST MIST)
        ========================================================================= -->
-  <section class="section" id="hidden-kerala">
-    <div class="container">
+  <section class="section section-atmosphere-hidden" id="hidden-kerala">
+    <div class="hidden-mist-ribbon-1"></div>
+    <div class="hidden-mist-ribbon-2"></div>
+    <div class="hidden-floating-leaf-1">🍃</div>
+    <div class="hidden-floating-leaf-2">✨</div>
+
+    <div class="container" style="position: relative; z-index: 2;">
       <div class="section-header">
         <span class="eyebrow">Signature Discovery</span>
         <h2 class="section-title">Hidden Kerala</h2>
@@ -614,7 +789,7 @@
         <!-- Aymanam -->
         <article class="hidden-card">
           <div class="card-image-box">
-            <img src="assets/images/districts/kottayam.png" alt="Aymanam village" onerror="this.src='images/kottayam.png'">
+            <img src="assets/images/districts/kottayam.png" alt="Aymanam village">
             <span class="card-badge-pill">Literary Sanctuary</span>
           </div>
           <div class="card-body">
@@ -631,7 +806,7 @@
         <!-- Kadamakudy -->
         <article class="hidden-card">
           <div class="card-image-box">
-            <img src="assets/images/districts/ernakulam.png" alt="Kadamakudy islands" onerror="this.src='images/ernakulam.png'">
+            <img src="assets/images/districts/ernakulam.png" alt="Kadamakudy islands">
             <span class="card-badge-pill">Island Cluster</span>
           </div>
           <div class="card-body">
@@ -648,7 +823,7 @@
         <!-- Muzhappilangad -->
         <article class="hidden-card">
           <div class="card-image-box">
-            <img src="assets/images/districts/kannur.png" alt="Muzhappilangad drive-in beach" onerror="this.src='images/kannur.png'">
+            <img src="assets/images/districts/kannur.png" alt="Muzhappilangad drive-in beach">
             <span class="card-badge-pill">Drive-in Coast</span>
           </div>
           <div class="card-body">
@@ -666,10 +841,13 @@
   </section>
 
   <!-- =========================================================================
-       9. EXPERIENCES
+       9. EXPERIENCES SECTION (UNIQUE ATMOSPHERE: WATER HORIZON & HOUSEBOAT)
        ========================================================================= -->
-  <section class="section section-ivory" id="experiences">
-    <div class="container">
+  <section class="section section-atmosphere-experiences" id="experiences">
+    <div class="experiences-water-wave"></div>
+    <div class="experiences-houseboat-drift">🛶</div>
+
+    <div class="container" style="position: relative; z-index: 2;">
       <div class="section-header">
         <span class="eyebrow">Living Encounters</span>
         <h2 class="section-title">Experience Kerala</h2>
@@ -704,10 +882,17 @@
   </section>
 
   <!-- =========================================================================
-       10. TASTE KERALA (FOOD)
+       10. TASTE KERALA SECTION (UNIQUE ATMOSPHERE: HEARTH WARMTH & STEAM)
        ========================================================================= -->
-  <section class="section" id="taste-kerala">
-    <div class="container">
+  <section class="section section-atmosphere-taste" id="taste-kerala">
+    <div class="taste-steam-container">
+      <div class="taste-steam-wisp-1"></div>
+      <div class="taste-steam-wisp-2"></div>
+    </div>
+    <div class="taste-spice-mote-1"></div>
+    <div class="taste-spice-mote-2"></div>
+
+    <div class="container" style="position: relative; z-index: 2;">
       <div class="section-header">
         <span class="eyebrow">Culinary Heritage</span>
         <h2 class="section-title">Taste Kerala</h2>
@@ -720,7 +905,7 @@
         <!-- Sadya -->
         <div class="food-card">
           <div class="card-image-box">
-            <img src="assets/images/districts/thiruvananthapuram.png" alt="Kerala Sadya feast" onerror="this.src='images/thiruvananthapuram.png'">
+            <img src="assets/images/districts/thiruvananthapuram.png" alt="Kerala Sadya feast">
             <span class="card-badge-pill">Royal Vegetarian Feast</span>
           </div>
           <div class="food-body">
@@ -740,7 +925,7 @@
         <!-- Karimeen Pollichathu -->
         <div class="food-card">
           <div class="card-image-box">
-            <img src="assets/images/districts/alappuzha.png" alt="Karimeen Pollichathu" onerror="this.src='images/alappuzha.png'">
+            <img src="assets/images/districts/alappuzha.png" alt="Karimeen Pollichathu">
             <span class="card-badge-pill">Backwater Classic</span>
           </div>
           <div class="food-body">
@@ -760,7 +945,7 @@
         <!-- Appam & Stew -->
         <div class="food-card">
           <div class="card-image-box">
-            <img src="assets/images/districts/kottayam.png" alt="Appam and Stew" onerror="this.src='images/kottayam.png'">
+            <img src="assets/images/districts/kottayam.png" alt="Appam and Stew">
             <span class="card-badge-pill">Breakfast Royalty</span>
           </div>
           <div class="food-body">
@@ -781,12 +966,16 @@
   </section>
 
   <!-- =========================================================================
-       11. CULTURE & LIVING HERITAGE
+       11. CULTURE SECTION (UNIQUE ATMOSPHERE: TEMPLE RADIANCE & ROOFLINE)
        ========================================================================= -->
-  <section class="section section-forest" id="culture">
-    <div class="container">
+  <section class="section section-atmosphere-culture" id="culture">
+    <div class="culture-lamp-glow-left"></div>
+    <div class="culture-lamp-glow-right"></div>
+    <div class="culture-arch-silhouette"></div>
+
+    <div class="container" style="position: relative; z-index: 2;">
       <div class="section-header">
-        <span class="eyebrow">Living Traditions</span>
+        <span class="eyebrow" style="color: var(--sand-light);">Living Traditions</span>
         <h2 class="section-title">Experience the Culture</h2>
         <p class="section-subtitle">
           Unbroken lineages of classical arts, temple percussion symphonies, and ancient martial prowess.
@@ -898,10 +1087,16 @@
   </section>
 
   <!-- =========================================================================
-       14. TRIP PLANNER (BUILD YOUR KERALA)
+       14. TRIP PLANNER (UNIQUE ATMOSPHERE: CARTOGRAPHIC WATERMARK)
        ========================================================================= -->
-  <section class="section section-ivory" id="plan-your-kerala">
-    <div class="container">
+  <section class="section section-atmosphere-plan" id="plan-your-kerala">
+    <!-- Compass watermark -->
+    <svg class="plan-compass-watermark" viewBox="0 0 100 100" fill="none" stroke="#173B32" stroke-width="1.2">
+      <circle cx="50" cy="50" r="45" />
+      <polygon points="50,10 58,42 90,50 58,58 50,90 42,58 10,50 42,42" fill="#173B32" fill-opacity="0.2"/>
+    </svg>
+
+    <div class="container" style="position: relative; z-index: 2;">
       <div class="planner-card">
         <div class="section-header text-center" style="margin-bottom: var(--space-2xl);">
           <span class="eyebrow">Tailored Itinerary</span>
@@ -964,9 +1159,9 @@
   </section>
 
   <!-- =========================================================================
-       15. STORIES FROM KERALA
+       15. STORIES FROM KERALA (UNIQUE ATMOSPHERE: EDITORIAL TRAVEL JOURNAL)
        ========================================================================= -->
-  <section class="section" id="stories">
+  <section class="section section-atmosphere-stories" id="stories">
     <div class="container">
       <div class="section-header">
         <span class="eyebrow">Travel Essays</span>
@@ -1120,7 +1315,10 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- Leaflet Library -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Application Modules -->
   <script src="js/data.js"></script>
   <script src="js/districts.js"></script>
   <script src="js/map.js"></script>
@@ -1128,7 +1326,6 @@
   <script src="js/favorites.js"></script>
   <script src="js/planner.js"></script>
   <script src="js/main.js"></script>
-  <!-- Backward compatible script.js hook -->
   <script src="script.js"></script>
 
 </body>

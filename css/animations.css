@@ -1,8 +1,222 @@
 /* ==========================================================================
-   THΛNAL (തണൽ) — RESTRAINED MICRO-INTERACTIONS & ANIMATIONS
-   Principles: Subtle, organic, cinematic, respectful of user preferences.
+   THΛNAL (തണൽ) — ATMOSPHERIC ANIMATIONS & MICRO-INTERACTIONS
+   Kerala-inspired living environment: clouds, mist, water ripples, boats,
+   flying birds, rising steam, and travel routes.
+   Restrained, organic, slow (5-28s), respecting prefers-reduced-motion.
    ========================================================================== */
 
+/* --- 1. Cloud & Sky Atmosphere (Explore & Highlands) --- */
+@keyframes slowCloudDrift {
+  0% {
+    transform: translate3d(-10%, 0, 0);
+  }
+  50% {
+    transform: translate3d(8%, -2px, 0);
+  }
+  100% {
+    transform: translate3d(-10%, 0, 0);
+  }
+}
+
+@keyframes birdFlyAcross {
+  0% {
+    transform: translate3d(-60px, 15px, 0) scale(0.65);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate3d(calc(100vw + 60px), -25px, 0) scale(0.85);
+    opacity: 0;
+  }
+}
+
+@keyframes birdFlyAcrossAlt {
+  0% {
+    transform: translate3d(-80px, 30px, 0) scale(0.5);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  85% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate3d(calc(100vw + 80px), -10px, 0) scale(0.7);
+    opacity: 0;
+  }
+}
+
+/* --- 2. Palm & Canopy Gentle Sway (Explore & Districts) --- */
+@keyframes palmBranchSway {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(1.8deg);
+  }
+}
+
+@keyframes palmBranchSwayAlt {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-1.5deg);
+  }
+}
+
+/* --- 3. Mountain Mist & Rainforest Fog (Hidden Kerala & Wayanad/Munnar) --- */
+@keyframes forestMistDrift {
+  0% {
+    transform: translate3d(-5%, 0, 0);
+    opacity: 0.28;
+  }
+  50% {
+    transform: translate3d(5%, -4px, 0);
+    opacity: 0.45;
+  }
+  100% {
+    transform: translate3d(-5%, 0, 0);
+    opacity: 0.28;
+  }
+}
+
+@keyframes forestMistDriftReverse {
+  0% {
+    transform: translate3d(6%, 0, 0);
+    opacity: 0.22;
+  }
+  50% {
+    transform: translate3d(-6%, 3px, 0);
+    opacity: 0.38;
+  }
+  100% {
+    transform: translate3d(6%, 0, 0);
+    opacity: 0.22;
+  }
+}
+
+/* --- 4. Floating Forest Particles / Leaves (Hidden Kerala) --- */
+@keyframes floatingParticle {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.55;
+  }
+  80% {
+    opacity: 0.45;
+  }
+  100% {
+    transform: translate3d(30px, -60px, 0) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* --- 5. Backwaters & Aquatic Movement (Experiences & Alappuzha) --- */
+@keyframes waterRippleWave {
+  0%, 100% {
+    transform: scaleY(1) translateY(0);
+  }
+  50% {
+    transform: scaleY(1.08) translateY(-2px);
+  }
+}
+
+@keyframes houseboatHorizonDrift {
+  0% {
+    transform: translate3d(-80px, 0, 0);
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.75;
+  }
+  92% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate3d(calc(100vw + 80px), -3px, 0);
+    opacity: 0;
+  }
+}
+
+/* --- 6. Warm Culinary Steam & Spices (Taste Kerala) --- */
+@keyframes steamWispRise {
+  0% {
+    transform: translate3d(0, 0, 0) scaleX(0.85);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.35;
+  }
+  80% {
+    opacity: 0.2;
+    transform: translate3d(8px, -45px, 0) scaleX(1.15);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(14px, -70px, 0) scaleX(1.3);
+  }
+}
+
+@keyframes spiceMoteFloat {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translate3d(12px, -18px, 0);
+    opacity: 0.6;
+  }
+}
+
+/* --- 7. Cultural Warm Radiance (Culture) --- */
+@keyframes templeLampGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.06);
+  }
+}
+
+/* --- 8. Travel Route & Cartographic Animations (Map & Plan) --- */
+@keyframes routeLineDash {
+  to {
+    stroke-dashoffset: -32;
+  }
+}
+
+@keyframes markerPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes boatRouteTravel {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+/* --- 9. Standard Interactive Keyframes --- */
 @keyframes pulseDot {
   0%, 100% {
     transform: scale(1);
@@ -25,30 +239,11 @@
   }
 }
 
-@keyframes gentleFloat {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-4px);
-  }
-}
-
 .fade-in-element {
   animation: subtleFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Subtle Interactive Transitions */
-.interactive-hover-lift {
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
-}
-
-.interactive-hover-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-hover);
-}
-
-/* Accessibility: Reduced Motion */
+/* --- 10. ACCESSIBILITY: PREFERS-REDUCED-MOTION --- */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -59,9 +254,22 @@
     scroll-behavior: auto !important;
   }
 
+  .cloud-layer,
+  .bird-layer,
+  .mist-ribbon,
+  .houseboat-element,
+  .steam-wisp,
+  .spice-mote,
+  .temple-lamp-glow,
+  .animated-route-line,
+  .palm-silhouette-svg {
+    animation: none !important;
+    transform: none !important;
+  }
+
   .district-image:hover img,
   .editorial-card:hover .card-image-box img,
-  .hero-visual-card:hover .hero-visual-img {
+  .hero-slide-img {
     transform: none !important;
   }
 }

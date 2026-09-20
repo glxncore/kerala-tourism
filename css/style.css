@@ -228,3 +228,10 @@ ul, ol {
   background-color: #bfa06b;
   transform: translateY(-2px);
 }
+.brand-logo-img {
+  height: 48px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  display: block;
+}
