@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background: #f7f5ef;
+    color: #173b32;
+}
+
+.signup-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.containerl {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+/* LEFT IMAGE */
+
+
+
+.image-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 60px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 40, 30, 0.75),
+            transparent 60%
+        );
+}
+
+.image-overlay h1 {
+    font-family: "Noto Sans Malayalam", sans-serif;
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.image-overlay p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/*left side*/
+.hero-sectionl {
+    flex: 0 0 50%;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(111, 154, 154, 0.18) 0%,
+            transparent 60%
+        ),
+        radial-gradient(
+            circle at 10% 80%,
+            rgba(201, 168, 117, 0.15) 0%,
+            transparent 50%
+        ),
+        var(--warm-white);
+
+    overflow: hidden;
+}
+.hero-gridl {
+  display: block;
+ 
+  align-items: center;
+}
+.hero-sectionl{
+    width: 50vw;
+    height: 100vh;
+}
+.hero-titlel {
+    font-family: var(--font-serif);
+    font-size: clamp(2.8rem, 5.8vw, 5.2rem);
+    line-height: 1.05;
+    font-weight: 500;
+    color: var(--deep-forest);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-md);
+}
+.hero-titlel-ml {
+    font-family: var(--font-ml);
+    font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+    color: var(--moss);
+    display: block;
+    margin-top: 4px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.containerl {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 54px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-gridl {
+    display: block;
+    width: 100%;
+}
+
+.hero-contentl {
+    width: 100%;
+}
+.hero-titlel em {
+    font-style: italic;
+    color: var(--forest-light);
+}
+
+.hero-descriptionl {
+    font-size: clamp(1.05rem, 1.3vw, 1.25rem);
+    color: var(--text-secondary);
+    line-height: 1.65;
+    max-width: 560px;
+    margin-bottom: var(--space-xl);
+}
+/* RIGHT SIDE */
+
+.signup-section {
+    flex: 0 0 50%;
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+    background: #ffffff;
+}
+
+.signup-box {
+    width: 100%;
+    max-width: 420px;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: block;
+
+    font-family: "Noto Sans Malayalam", sans-serif;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    color: #173b32;
+
+    text-decoration: none;
+
+    margin-bottom: 50px;
+}
+
+
+/* HEADING */
+
+.signup-box h2 {
+    font-family: var(--font-serif);
+    font-size: 42px;
+    font-weight: 400;
+    color: var(--deep-forest);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #718078;
+
+    line-height: 1.6;
+
+    margin-bottom: 35px;
+}
+
+
+/* INPUTS */
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+.login-link {
+    text-align: center;
+    margin-top: 25px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.login-link a {
+    color: var(--forest);
+    text-decoration: none;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    border: 1px solid #d7ddd8;
+    border-radius: 10px;
+
+    background: white;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #1c5749;
+
+    box-shadow:
+        0 0 0 3px rgba(28, 87, 73, 0.08);
+}
+
+
+/* OPTIONS */
+
+.signup-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+
+
+.remember {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+
+/* BUTTON */
+
+button {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #173f35;
+    color: white;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #245c4e;
+    transform: translateY(-1px);
+}
+
+
+/* SIGNUP */
+
+.signup {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #718078;
+
+    font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .login-page {
+        display: block;
+    }
+
+    
+
+    .login-section {
+        width: 100%;
+        padding: 35px 25px;
+    }
+
+    .image-overlay {
+        padding: 30px;
+    }
+
+    .image-overlay h1 {
+        font-size: 36px;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    .login-box h2 {
+        font-size: 34px;
+    }
+}
+
+
+
+:root {
+  /* --- Primary Brand Colors (Kerala Deep Forest & Canopy) --- */
+  --forest: #173B32;
+  --deep-forest: #0D2923;
+  --forest-light: #224E43;
+  --forest-dark: #071915;
+
+  /* --- Backgrounds & Surface Tones (Ivory, Warm Paper) --- */
+  --ivory: #F5F1E8;
+  --warm-white: #FAF9F5;
+  --pure-white: #FFFFFF;
+  --surface-card: #FFFFFF;
+  --surface-muted: #EFE9DD;
+  --surface-overlay: rgba(13, 41, 35, 0.72);
+
+  /* --- Nature (Flora & Spice Hills) --- */
+  --moss: #6F8065;
+  --moss-light: #8E9F84;
+  --sage: #8A9270;
+  --sage-light: #B2B8A0;
+
+  /* --- Water (Arabian Sea, Backwaters & Mist) --- */
+  --backwater: #6F9A9A;
+  --backwater-dark: #4F7979;
+  --mist-blue: #A9C4C2;
+  --mist-blue-light: #D4E4E3;
+
+  /* --- Warm Accents (Sand, Laterite, Terracotta) --- */
+  --sand: #C9A875;
+  --sand-light: #E3CEAB;
+  --terracotta: #A66A4C;
+  --terracotta-light: #C78A6C;
+
+  /* --- Typography Colors --- */
+  --text-primary: #122822;
+  --text-secondary: #4A5B53;
+  --text-muted: #788A81;
+  --text-inverse: #FAF9F5;
+  --text-inverse-muted: #D3DDD8;
+
+  /* --- Borders & Outlines (Subtle borders over heavy shadows) --- */
+  --border-subtle: rgba(23, 59, 50, 0.08);
+  --border-medium: rgba(23, 59, 50, 0.16);
+  --border-strong: rgba(23, 59, 50, 0.28);
+  --border-inverse: rgba(250, 249, 245, 0.18);
+
+  /* --- Shadows (Restrained, soft luxury elevation) --- */
+  --shadow-sm: 0 2px 8px rgba(13, 41, 35, 0.04);
+  --shadow-md: 0 8px 24px rgba(13, 41, 35, 0.07);
+  --shadow-lg: 0 16px 40px rgba(13, 41, 35, 0.10);
+  --shadow-hover: 0 20px 48px rgba(13, 41, 35, 0.14);
+
+  /* --- Border Radius System --- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-card: 22px;
+  --radius-image: 24px;
+  --radius-pill: 999px;
+
+  /* --- Typography System (Max 3 Font Families) --- */
+  --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-ml: 'Noto Sans Malayalam', 'Manrope', sans-serif;
+
+  /* --- Layout & Spacing Scale --- */
+  --container-max-width: 1320px;
+  --container-padding: clamp(1.25rem, 3.5vw, 3rem);
+  
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6rem;
+
+  /* --- Motion & Transitions --- */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
