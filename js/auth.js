@@ -52,6 +52,7 @@ if (loginForm) {
         try {
             const response = await fetch("http://localhost:3000/api/login", {
                 method: "POST",
+                credentials: "include",
                 headers: {
                     "Content-Type": "application/json"
                 },
@@ -65,12 +66,6 @@ if (loginForm) {
 
             if (response.ok) {
                 alert(data.message);
-
-                // Save logged-in user information temporarily
-                sessionStorage.setItem(
-                    "thanalUser",
-                    JSON.stringify(data.user)
-                );
 
                 // Go to homepage
                 window.location.href = "index.html";

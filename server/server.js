@@ -3,14 +3,34 @@ const cors = require("cors");
 const bcrypt = require("bcryptjs");
 
 const db = require("./config/database");
+const session = require("express-session");
 
 const app = express();
 const PORT = 3000;
 
 // Middleware
-app.use(cors());
+app.use(
+    cors({
+        origin: true,
+        credentials: true
+    })
+);
 app.use(express.json());
 
+
+
+app.use(
+    session({
+        secret: "thanal-secret-key",
+        resave: false,
+        saveUninitialized: false,
+        cookie: {
+            secure: false,
+            httpOnly: true,
+            maxAge: 1000 * 60 * 60 * 24
+        }
+    })
+);
 
 // Test route
 app.get("/", (req, res) => {
@@ -141,14 +161,16 @@ app.post("/api/login", async (req, res) => {
                 }
 
                 // Login successful
-                res.status(200).json({
-                    message: "Login successful!",
-                    user: {
-                        id: user.id,
-                        name: user.name,
-                        email: user.email
-                    }
-                });
+                req.session.user = {
+    id: user.id,
+    name: user.name,
+    email: user.email
+};
+
+res.status(200).json({
+    message: "Login successful!",
+    user: req.session.user
+});
             }
         );
 
